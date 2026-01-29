@@ -245,6 +245,7 @@ footer p {
 .error-messages {
     min-width: 150px;
     font-size: 13px;
+    margin-top: -3px;
 }
 
 .error-message {
@@ -265,11 +266,11 @@ footer p {
 
 .input-wrapper .form-hint {
     padding-left: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .input-wrapper .form-hint:last-of-type {
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .signup-button-row {
