@@ -688,3 +688,85 @@ footer p {
 .complete-button:hover {
     background-color: #ff6f00;
 }
+
+/* ================================================
+   マイページ
+   ================================================ */
+
+.user-name {
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3f51b5;
+}
+
+.mypage-main {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.mypage-deck-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.mypage-deck-card {
+    background-color: #c0c0c0;
+    border: 1px solid #999;
+}
+
+.mypage-deck-header {
+    background-color: #c0c0c0;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #999;
+}
+
+.mypage-deck-actions {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mypage-deck-button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.mypage-deck-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* マイページレスポンシブ */
+@media (max-width: 1200px) {
+    .mypage-deck-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .mypage-deck-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .mypage-deck-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
