@@ -12,7 +12,7 @@
         <nav class="header-nav">
             <button type="button">デッキ登録</button>
             <a href="login/login.php" class="nav-button">ログイン</a>
-            <button type="button">サインアップ</button>
+            <a href="login/signup.php" class="nav-button">サインアップ</a>
         </nav>
     </header>
 

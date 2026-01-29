@@ -18,7 +18,7 @@
                 <div class="input-wrapper">
                     <input type="text" id="login_id" name="login_id" maxlength="14" required>
                     <div class="error-messages">
-                        <!-- エラーメッセージ表示エリア -->
+                        <span class="error-message">これはエラーメッセージです</span>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                 <div class="input-wrapper">
                     <input type="password" id="password" name="password" maxlength="14" required>
                     <div class="error-messages">
-                        <!-- エラーメッセージ表示エリア -->
+                        <span class="error-message">これはエラーメッセージです</span>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@
             <p class="form-hint">パスワードには、大文字アルファベット、数字を必ず使用してください</p>
 
             <div class="form-actions signup-actions">
-                <button type="submit" class="login-button">送信</button>
+                <a href="../index.php" class="login-button">送信</a>
             </div>
         </form>
     </div>
