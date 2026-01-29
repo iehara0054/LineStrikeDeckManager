@@ -13,6 +13,8 @@
             <a href="view/construction.php" class="nav-button">デッキ登録</a>
             <a href="view/login.php" class="nav-button">ログイン</a>
             <a href="view/signup.php" class="nav-button">サインアップ</a>
+            <a href="view/mypage.php" class="nav-button">マイページ</a>
+            <p class="nav-note">※ログイン時、サインアップボタンがマイページボタンにかわります</p>
         </nav>
     </header>
 

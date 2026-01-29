@@ -10,6 +10,7 @@
     <div class="login-container">
         <h1 class="login-title">ラインストライク デッキビルダー</h1>
 
+        <!-- TODO: action属性にPHP処理ファイルを指定する -->
         <form class="login-form" action="" method="post">
             <h2 class="form-subtitle">ユーザー登録</h2>
 
@@ -50,10 +51,15 @@
             <div class="form-group signup-button-row">
                 <label></label>
                 <div class="signup-button-area">
-                    <a href="../index.php" class="login-button">送信</a>
+                    <!-- TODO: <button type="submit" class="login-button">送信</button> に変更する -->
+                    <a href="complete.php" class="login-button">送信</a>
                 </div>
             </div>
         </form>
     </div>
+
+    <footer>
+        <p>&copy; 2025 ラインストライク デッキビルダー</p>
+    </footer>
 </body>
 </html>

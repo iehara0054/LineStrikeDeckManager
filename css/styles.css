@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ヘッダー */
@@ -31,7 +38,10 @@ header {
 
 .header-nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .header-nav button,
@@ -52,8 +62,17 @@ header {
     background-color: #ff6f00;
 }
 
+.nav-note {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+
 /* メインコンテンツ */
 main {
+    flex: 1;
     padding: 30px;
 }
 
@@ -117,6 +136,7 @@ footer {
     text-align: center;
     padding: 20px 30px;
     border-top: 3px solid #ff6f00;
+    margin-top: auto;
 }
 
 footer p {
@@ -125,7 +145,7 @@ footer p {
 
 /* ログイン画面 */
 .login-container {
-    min-height: 100vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -358,10 +378,10 @@ footer p {
    ================================================ */
 
 .construction-main {
+    flex: 1;
     display: flex;
     gap: 20px;
     padding: 20px;
-    min-height: calc(100vh - 120px);
 }
 
 /* パネル共通スタイル */
@@ -624,4 +644,41 @@ footer p {
     .element-filter {
         justify-content: center;
     }
+}
+
+/* ================================================
+   登録完了画面
+   ================================================ */
+
+.complete-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.complete-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.complete-button {
+    display: inline-block;
+    padding: 12px 60px;
+    font-size: 16px;
+    background-color: #3f51b5;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.complete-button:hover {
+    background-color: #ff6f00;
 }

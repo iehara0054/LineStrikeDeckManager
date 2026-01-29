@@ -191,6 +191,7 @@
                     </li>
                 </ul>
                 <div class="deck-actions">
+                    <!-- TODO: フォーム送信またはJavaScriptでデッキデータをPHPへ送信する処理を実装 -->
                     <button type="button" class="save-deck-button">保存</button>
                 </div>
             </div>
