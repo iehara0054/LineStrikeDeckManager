@@ -9,18 +9,22 @@
 <body>
     <header>
         <a href="index.php" class="site-title">ラインストライク デッキビルダー</a>
-        <h1 class="page-title">トップページ</h1>
+        <h1 class="page-title">みんなのデッキ閲覧</h1>
         <nav class="header-nav">
             <a href="view/construction.php" class="nav-button">デッキ登録</a>
 <!-- TODO: ログイン状態によってボタンの表示を切り替える -->
             <a href="view/login.php" class="nav-button">ログイン</a>
             <a href="view/signup.php" class="nav-button">サインアップ</a>
             <a href="view/mypage.php" class="nav-button">マイページ</a>
-            <p class="nav-note">※ログイン時、サインアップボタンがマイページボタンにかわります</p>
+            <p class="nav-note">※ログイン後はログイン、サインアップボタンが消えてマイページボタンだけになります</p>
         </nav>
     </header>
 
     <main>
+        <div class="site-description">
+            このサイトはPSO2内カードゲーム・ラインストライクのデッキ構築/他者のデッキ閲覧を補助するサイトです。<br>
+            デッキの閲覧、登録、編集が可能です。
+        </div>
         <h2 class="section-title">デッキ一覧</h2>
         <!-- TODO: 各デッキカードのリンクにデッキIDをパラメータとして渡す（例: deck.php?id=デッキID） -->
         <div class="deck-grid">

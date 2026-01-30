@@ -11,8 +11,11 @@
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">デッキ閲覧</h1>
         <nav class="header-nav">
-            <a href="../index.php" class="nav-button">一覧</a>
-            <a href="mypage.php" class="user-name">ユーザー名</a>
+            <a href="../index.php" class="nav-button">みんなのデッキ閲覧</a>
+            <a href="construction.php" class="nav-button">デッキ登録</a>
+            <a href="login.php" class="nav-button">ログイン</a>
+            <a href="signup.php" class="nav-button">サインアップ</a>
+            <a href="mypage.php" class="nav-button">マイページ</a>
         </nav>
     </header>
 

@@ -10,7 +10,6 @@
     <header>
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">ログインページ</h1>
-        <nav class="header-nav"></nav>
     </header>
     <div class="login-container">
         <h1 class="login-title">ログイン</h1>

@@ -10,8 +10,8 @@ html {
 
 body {
     font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
-    background-color: #0d1b2a;
-    color: #fff;
+    background-color: #f4f8fb;
+    color: #333;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -23,8 +23,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #1b2838;
-    border-bottom: 3px solid #ff6f00;
+    background-color: #0d2137;
+    border-bottom: none;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -39,7 +39,7 @@ header {
 }
 
 a.site-title:hover {
-    color: #ff6f00;
+    color: #ff6600;
 }
 
 .page-title {
@@ -65,7 +65,7 @@ a.site-title:hover {
     padding: 8px 20px;
     font-size: 14px;
     border: none;
-    background-color: #3f51b5;
+    background-color: #ff6600;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.2s;
@@ -75,7 +75,7 @@ a.site-title:hover {
 
 .header-nav button:hover,
 .header-nav .nav-button:hover {
-    background-color: #ff6f00;
+    background-color: #e65c00;
 }
 
 .nav-note {
@@ -92,10 +92,22 @@ main {
     padding: 30px;
 }
 
+/* サイト説明文 */
+.site-description {
+    background-color: #e8f0f6;
+    border: 1px solid #d0dbe5;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    color: #0d2137;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 .section-title {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #0d2137;
     font-weight: bold;
 }
 
@@ -108,8 +120,8 @@ main {
 
 /* デッキカード */
 .deck-card {
-    background-color: #1b2838;
-    border: 2px solid #2d4a6f;
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
     cursor: pointer;
     transition: box-shadow 0.2s, border-color 0.2s;
     text-decoration: none;
@@ -118,12 +130,12 @@ main {
 }
 
 .deck-card:hover {
-    box-shadow: 0 4px 12px rgba(63, 81, 181, 0.5);
-    border-color: #ff6f00;
+    box-shadow: 0 4px 12px rgba(13, 33, 55, 0.2);
+    border-color: #ff6600;
 }
 
 .deck-card-header {
-    background-color: #3f51b5;
+    background-color: #0d2137;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -137,7 +149,7 @@ main {
     justify-content: center;
     padding: 20px;
     text-align: center;
-    color: #8ba4c4;
+    color: #5a7a9e;
     font-size: 13px;
     line-height: 1.6;
 }
@@ -150,11 +162,11 @@ main {
 
 /* フッター */
 footer {
-    background-color: #1b2838;
+    background-color: #0a1628;
     color: #fff;
     text-align: center;
     padding: 20px 30px;
-    border-top: 3px solid #ff6f00;
+    border-top: none;
     margin-top: auto;
 }
 
@@ -170,14 +182,14 @@ footer p {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #0d1b2a;
+    background-color: #f4f8fb;
 }
 
 .login-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 60px;
-    color: #fff;
+    color: #0d2137;
 }
 
 .login-form {
@@ -195,7 +207,7 @@ footer p {
     width: 120px;
     font-size: 14px;
     flex-shrink: 0;
-    color: #8ba4c4;
+    color: #0d2137;
     padding-top: 10px;
 }
 
@@ -203,16 +215,16 @@ footer p {
     flex: 1;
     padding: 10px 12px;
     font-size: 14px;
-    border: 2px solid #2d4a6f;
-    background-color: #1b2838;
-    color: #fff;
+    border: 1px solid #d0dbe5;
+    background-color: #fff;
+    color: #333;
     outline: none;
     transition: border-color 0.2s, background-color 0.2s;
 }
 
 .form-group input:focus {
-    border-color: #ff6f00;
-    background-color: #0d1b2a;
+    border-color: #ff6600;
+    background-color: #fff;
 }
 
 .form-actions {
@@ -228,7 +240,7 @@ footer p {
     padding: 10px 40px;
     font-size: 14px;
     border: none;
-    background-color: #3f51b5;
+    background-color: #ff6600;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.2s;
@@ -238,18 +250,18 @@ footer p {
 }
 
 .login-button:hover {
-    background-color: #303f9f;
+    background-color: #e65c00;
 }
 
 .register-link {
     font-size: 14px;
-    color: #ff6f00;
+    color: #ff6600;
     text-decoration: none;
 }
 
 .register-link:hover {
     text-decoration: underline;
-    color: #e65100;
+    color: #e65c00;
 }
 
 /* ユーザー登録画面 */
@@ -257,7 +269,7 @@ footer p {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 40px;
-    color: #8ba4c4;
+    color: #5a7a9e;
 }
 
 .input-wrapper {
@@ -271,16 +283,16 @@ footer p {
     width: 100%;
     padding: 10px 12px;
     font-size: 14px;
-    border: 2px solid #2d4a6f;
-    background-color: #1b2838;
-    color: #fff;
+    border: 1px solid #d0dbe5;
+    background-color: #fff;
+    color: #333;
     outline: none;
     transition: border-color 0.2s, background-color 0.2s;
 }
 
 .input-wrapper input:focus {
-    border-color: #ff6f00;
-    background-color: #0d1b2a;
+    border-color: #ff6600;
+    background-color: #fff;
 }
 
 .error-messages {
@@ -296,7 +308,7 @@ footer p {
 
 .form-hint {
     font-size: 13px;
-    color: #8ba4c4;
+    color: #5a7a9e;
     margin-bottom: 10px;
     padding-left: 120px;
 }
@@ -413,7 +425,7 @@ footer p {
 
 /* パネル共通スタイル */
 .panel-header {
-    background-color: #3f51b5;
+    background-color: #0d2137;
     color: #fff;
     padding: 10px 15px;
     font-size: 14px;
@@ -425,8 +437,8 @@ footer p {
 
 .panel-content {
     padding: 15px;
-    background-color: #1b2838;
-    border: 2px solid #2d4a6f;
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
     border-top: none;
 }
 
@@ -440,17 +452,17 @@ footer p {
     width: 100%;
     padding: 8px 10px;
     font-size: 13px;
-    border: 2px solid #2d4a6f;
-    background-color: #0d1b2a;
-    color: #fff;
+    border: 1px solid #d0dbe5;
+    background-color: #fff;
+    color: #333;
     outline: none;
     margin-bottom: 12px;
     transition: border-color 0.2s, background-color 0.2s;
 }
 
 .search-input:focus {
-    border-color: #ff6f00;
-    background-color: #1b2838;
+    border-color: #ff6600;
+    background-color: #fff;
 }
 
 .element-filter {
@@ -472,15 +484,15 @@ footer p {
 .element-label {
     padding: 5px 8px;
     font-size: 12px;
-    border: 2px solid #2d4a6f;
-    background-color: #0d1b2a;
+    border: 1px solid #d0dbe5;
+    background-color: #fff;
     transition: all 0.2s;
     white-space: nowrap;
 }
 
 .element-checkbox input:checked + .element-label {
-    border-color: #3f51b5;
-    background-color: #1b2838;
+    border-color: #0d2137;
+    background-color: #e8f0f6;
 }
 
 .element-fire { color: #d32f2f; }
@@ -500,14 +512,14 @@ footer p {
 /* カードプレビュー */
 .card-preview {
     margin-top: 15px;
-    border: 2px solid #2d4a6f;
-    background-color: #1b2838;
+    border: 1px solid #d0dbe5;
+    background-color: #fff;
 }
 
 .preview-image {
     aspect-ratio: 3 / 4;
     overflow: hidden;
-    background-color: #0d1b2a;
+    background-color: #e8f0f6;
 }
 
 .preview-image img {
@@ -518,7 +530,7 @@ footer p {
 
 .preview-info {
     padding: 10px;
-    background-color: #3f51b5;
+    background-color: #0d2137;
 }
 
 .preview-name {
@@ -532,8 +544,8 @@ footer p {
 /* 中央: カード一覧パネル */
 .card-list-panel {
     flex: 1;
-    background-color: #0d1b2a;
-    border: 2px solid #2d4a6f;
+    background-color: #e8f0f6;
+    border: 1px solid #d0dbe5;
     padding: 15px;
     overflow-y: auto;
 }
@@ -546,16 +558,16 @@ footer p {
 
 .game-card {
     position: relative;
-    background-color: #1b2838;
-    border: 2px solid #2d4a6f;
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .game-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(63, 81, 181, 0.5);
-    border-color: #ff6f00;
+    box-shadow: 0 4px 12px rgba(13, 33, 55, 0.2);
+    border-color: #ff6600;
 }
 
 .card-cost {
@@ -601,14 +613,14 @@ footer p {
     min-width: 100px;
     padding: 5px 8px;
     font-size: 13px;
-    border: 1px solid #2d4a6f;
-    background-color: #0d1b2a;
-    color: #fff;
+    border: 1px solid #d0dbe5;
+    background-color: #fff;
+    color: #333;
     outline: none;
 }
 
 .deck-name-input:focus {
-    border-color: #ff6f00;
+    border-color: #ff6600;
 }
 
 .deck-slot-list {
@@ -622,7 +634,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid #2d4a6f;
+    border-bottom: 1px solid #d0dbe5;
     font-size: 14px;
 }
 
@@ -631,11 +643,11 @@ footer p {
 }
 
 .slot-name {
-    color: #fff;
+    color: #333;
 }
 
 .slot-count {
-    color: #8ba4c4;
+    color: #5a7a9e;
     font-size: 13px;
 }
 
@@ -648,14 +660,14 @@ footer p {
     padding: 10px 30px;
     font-size: 14px;
     border: none;
-    background-color: #3f51b5;
+    background-color: #ff6600;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .save-deck-button:hover {
-    background-color: #ff6f00;
+    background-color: #e65c00;
 }
 
 /* 構築画面レスポンシブ */
@@ -687,13 +699,13 @@ footer p {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #0d1b2a;
+    background-color: #f4f8fb;
 }
 
 .complete-message {
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color: #0d2137;
     margin-bottom: 30px;
 }
 
@@ -701,7 +713,7 @@ footer p {
     display: inline-block;
     padding: 12px 60px;
     font-size: 16px;
-    background-color: #3f51b5;
+    background-color: #ff6600;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -710,7 +722,7 @@ footer p {
 }
 
 .complete-button:hover {
-    background-color: #ff6f00;
+    background-color: #e65c00;
 }
 
 /* ================================================
@@ -721,13 +733,13 @@ footer p {
     padding: 8px 20px;
     font-size: 14px;
     color: #fff;
-    background-color: #3f51b5;
+    background-color: #0d2137;
 }
 
 .mypage-main {
     flex: 1;
     padding: 30px;
-    background-color: #0d1b2a;
+    background-color: #f4f8fb;
     overflow-y: auto;
 }
 
@@ -738,12 +750,12 @@ footer p {
 }
 
 .mypage-deck-card {
-    background-color: #1b2838;
-    border: 2px solid #2d4a6f;
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
 }
 
 .mypage-deck-header {
-    background-color: #3f51b5;
+    background-color: #0d2137;
     padding: 15px;
     text-align: center;
     font-size: 14px;
@@ -765,16 +777,17 @@ footer p {
     font-size: 14px;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #2d4a6f;
-    background-color: #0d1b2a;
-    color: #fff;
+    border: 1px solid #d0dbe5;
+    background-color: #f4f8fb;
+    color: #333;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .mypage-deck-button:hover {
-    background-color: #ff6f00;
-    border-color: #ff6f00;
+    background-color: #ff6600;
+    border-color: #ff6600;
+    color: #fff;
 }
 
 /* マイページレスポンシブ */
@@ -818,7 +831,7 @@ footer p {
     padding: 10px 25px;
     font-size: 14px;
     border: none;
-    background-color: #3f51b5;
+    background-color: #0d2137;
     color: #fff;
     cursor: pointer;
     transition: all 0.2s;
@@ -827,7 +840,7 @@ footer p {
 }
 
 .deck-tab:hover {
-    background-color: #ff6f00;
+    background-color: #ff6600;
     color: #fff;
 }
 
@@ -838,7 +851,7 @@ a.user-name {
 }
 
 a.user-name:hover {
-    background-color: #ff6f00;
+    background-color: #ff6600;
 }
 
 /* コンテンツラッパー */
@@ -851,8 +864,8 @@ a.user-name:hover {
 /* デッキ編成エリア */
 .deck-formation-area {
     flex: 1;
-    background-color: #1b2838;
-    border: 2px solid #2d4a6f;
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -868,15 +881,15 @@ a.user-name:hover {
     max-width: 300px;
     padding: 10px 15px;
     font-size: 16px;
-    border: 2px solid #3f51b5;
-    background-color: #0d1b2a;
-    color: #fff;
+    border: 1px solid #d0dbe5;
+    background-color: #fff;
+    color: #333;
     outline: none;
     transition: border-color 0.2s;
 }
 
 .deck-title-input:focus {
-    border-color: #ff6f00;
+    border-color: #ff6600;
 }
 
 .deck-info-section {
@@ -886,13 +899,13 @@ a.user-name:hover {
 .deck-detail-name {
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color: #0d2137;
     margin: 0 0 8px 0;
 }
 
 .deck-creator {
     font-size: 14px;
-    color: #8ba4c4;
+    color: #5a7a9e;
     margin: 0;
 }
 
@@ -907,20 +920,20 @@ a.user-name:hover {
 /* 編成スロット */
 .formation-slot {
     aspect-ratio: 3 / 4;
-    background-color: #0d1b2a;
-    border: 2px solid #2d4a6f;
+    background-color: #e8f0f6;
+    border: 1px solid #d0dbe5;
     cursor: pointer;
     transition: all 0.2s;
     position: relative;
 }
 
 .formation-slot:hover {
-    border-color: #3f51b5;
+    border-color: #0d2137;
 }
 
 .formation-slot.selected {
-    border-color: #ff6f00;
-    box-shadow: 0 0 10px rgba(255, 111, 0, 0.5);
+    border-color: #ff6600;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
 }
 
 .formation-slot.empty {
@@ -931,7 +944,7 @@ a.user-name:hover {
 
 .slot-placeholder {
     font-size: 32px;
-    color: #2d4a6f;
+    color: #b0c4d8;
 }
 
 /* スロット内カード */
@@ -975,7 +988,7 @@ a.user-name:hover {
 .comment-label {
     font-size: 14px;
     font-weight: bold;
-    color: #8ba4c4;
+    color: #5a7a9e;
     margin-bottom: 8px;
 }
 
@@ -985,34 +998,34 @@ a.user-name:hover {
     padding: 10px;
     font-size: 14px;
     font-family: inherit;
-    border: 2px solid #2d4a6f;
-    background-color: #0d1b2a;
-    color: #fff;
+    border: 1px solid #d0dbe5;
+    background-color: #fff;
+    color: #333;
     resize: vertical;
     outline: none;
     transition: border-color 0.2s;
 }
 
 .comment-textarea:focus {
-    border-color: #ff6f00;
+    border-color: #ff6600;
 }
 
 .comment-textarea::placeholder {
-    color: #5a7a9e;
+    color: #a0b4c8;
 }
 
 /* カード拡大表示パネル */
 .card-preview-panel {
     width: 300px;
     flex-shrink: 0;
-    background-color: #1b2838;
-    border: 2px solid #2d4a6f;
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
     display: flex;
     flex-direction: column;
 }
 
 .card-preview-header {
-    background-color: #3f51b5;
+    background-color: #0d2137;
     color: #fff;
     padding: 10px 15px;
     font-size: 14px;
@@ -1031,7 +1044,7 @@ a.user-name:hover {
 .card-preview-image {
     width: 100%;
     aspect-ratio: 3 / 4;
-    border: 2px solid #2d4a6f;
+    border: 1px solid #d0dbe5;
     overflow: hidden;
 }
 

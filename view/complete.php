@@ -10,7 +10,11 @@
     <header>
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">登録完了</h1>
-        <nav class="header-nav"></nav>
+        <nav class="header-nav">
+            <a href="../index.php" class="nav-button">みんなのデッキ閲覧</a>
+            <a href="construction.php" class="nav-button">デッキ登録</a>
+            <a href="mypage.php" class="nav-button">マイページ</a>
+        </nav>
     </header>
     <div class="complete-container">
         <p class="complete-message">ユーザー登録が完了しました</p>
