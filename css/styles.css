@@ -526,7 +526,7 @@ footer {
 .register-link {
     font-size: 14px;
     color: #ff6600;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .register-link:hover {

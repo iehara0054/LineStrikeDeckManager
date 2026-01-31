@@ -30,6 +30,8 @@
             <div class="form-actions">
                 <button type="submit" class="login-button">ログイン</button>
                 <a href="signup.php" class="register-link">ユーザー登録</a>
+                <!-- TODO: パスワードリセットページを作成する -->
+                <a href="#" class="register-link">パスワードを忘れた方はこちらをクリックしてください</a>
             </div>
         </form>
     </div>
