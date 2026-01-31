@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ラインストライク デッキビルダー</title>
+    <link rel="icon" href="img/ngs_linestrike_icon.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="fixed-layout page-index">
@@ -28,7 +29,7 @@
         <div class="index-header">
             <div class="section-header-row">
                 <h2 class="section-title">みんなのデッキ一覧</h2>
-                <p class="section-hint">下記デッキをクリックすると内容を閲覧できます</p>
+                <p class="section-hint">下記デッキカードをクリックすると、デッキの構成を閲覧できます。</p>
             </div>
         </div>
         <!-- TODO: 各デッキカードのリンクにデッキIDをパラメータとして渡す（例: deck.php?id=デッキID） -->

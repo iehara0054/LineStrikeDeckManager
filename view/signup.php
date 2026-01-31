@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ユーザー登録 - ラインストライク デッキビルダー</title>
+    <link rel="icon" href="../img/ngs_linestrike_icon.png" type="image/png">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class="page-signup">
@@ -61,7 +62,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 ラインストライク デッキビルダー</p>
+        <p class="footer-copyright">&copy; 2025 ラインストライク デッキビルダー</p>
     </footer>
 </body>
 </html>
