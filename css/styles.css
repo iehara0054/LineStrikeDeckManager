@@ -1164,7 +1164,13 @@ a.user-name:hover {
     font-size: 20px;
     font-weight: bold;
     color: #0d2137;
-    margin: 0 0 8px 0;
+    margin: 0;
+}
+
+.deck-creator-inline {
+    font-size: 14px;
+    font-weight: normal;
+    color: #5a7a9e;
 }
 
 .deck-creator {
@@ -1173,12 +1179,20 @@ a.user-name:hover {
     margin: 0;
 }
 
+/* コメントとカードグリッドの横並びコンテナ */
+.formation-with-comment {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
 /* 5x3 編成グリッド */
 .formation-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    max-width: 600px;
+    width: 600px;
+    flex-shrink: 0;
 }
 
 /* 編成スロット */
@@ -1246,14 +1260,30 @@ a.user-name:hover {
 
 /* コメントセクション（カードエリア内） */
 .comment-section {
-    margin-top: 10px;
+    flex: 1;
+    min-width: 150px;
 }
 
 .comment-label {
     font-size: 14px;
     font-weight: bold;
     color: #5a7a9e;
-    margin-bottom: 8px;
+    padding: 10px 10px 5px 10px;
+    background-color: #f4f8fb;
+    border: 1px solid #d0dbe5;
+    border-bottom: none;
+    margin: 0;
+}
+
+.comment-content {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    padding: 5px 10px 10px 10px;
+    background-color: #f4f8fb;
+    border: 1px solid #d0dbe5;
+    border-top: none;
+    min-height: 280px;
 }
 
 .comment-textarea {
@@ -1331,6 +1361,16 @@ a.user-name:hover {
     .card-preview-content {
         max-width: 300px;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .formation-with-comment {
+        flex-direction: column;
+    }
+
+    .comment-section {
+        width: 100%;
     }
 }
 

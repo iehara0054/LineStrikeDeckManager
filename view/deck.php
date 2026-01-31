@@ -34,171 +34,128 @@
             <div class="deck-formation-area">
                 <!-- デッキ情報 -->
                 <div class="deck-info-section">
-                    <h2 class="deck-detail-name">デッキ名</h2>
-                    <p class="deck-creator">制作者名</p>
+                    <h2 class="deck-detail-name">デッキ名 <span class="deck-creator-inline">ー 制作者：制作者名</span></h2>
                 </div>
 
-                <!-- 5x3 カードグリッド -->
-                <div class="formation-grid">
-                    <!-- 1行目 -->
-                    <div class="formation-slot" data-slot="1-1">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
+                <!-- コメントとカードグリッドの横並びコンテナ -->
+                <div class="formation-with-comment">
+                    <!-- 5x3 カードグリッド（左側） -->
+                    <div class="formation-grid">
+                        <!-- 1行目 -->
+                        <div class="formation-slot" data-slot="1-1">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
                             </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★★</span>
+                        </div>
+                        <div class="formation-slot" data-slot="1-2">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="1-3">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="1-4">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="1-5">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2行目 -->
+                        <div class="formation-slot" data-slot="2-1">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="2-2">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="2-3">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="2-4">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="2-5">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3行目 -->
+                        <div class="formation-slot" data-slot="3-1">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="3-2">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="3-3">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="3-4">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formation-slot" data-slot="3-5">
+                            <div class="slot-card filled">
+                                <div class="slot-card-image">
+                                    <img src="../images/placeholder.png" alt="カード">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="formation-slot" data-slot="1-2">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="1-3">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="1-4">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="1-5">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 2行目 -->
-                    <div class="formation-slot" data-slot="2-1">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="2-2">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="2-3">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="2-4">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="2-5">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 3行目 -->
-                    <div class="formation-slot" data-slot="3-1">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="3-2">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="3-3">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="3-4">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formation-slot" data-slot="3-5">
-                        <div class="slot-card filled">
-                            <div class="slot-card-image">
-                                <img src="../images/placeholder.png" alt="カード">
-                            </div>
-                            <div class="slot-card-info">
-                                <span class="slot-card-rarity">★★</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- コメントセクション -->
-                <div class="comment-section">
-                    <div class="comment-label">コメント</div>
-                    <textarea class="comment-textarea" placeholder="コメントを入力..."></textarea>
+                    <!-- コメントセクション（右側） -->
+                    <div class="comment-section">
+                        <div class="comment-label">コメント</div>
+                        <div class="comment-content">コメントを入力...</div>
+                    </div>
                 </div>
             </div>
 
