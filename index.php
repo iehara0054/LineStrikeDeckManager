@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body class="fixed-layout page-index">
     <header>
         <a href="index.php" class="site-title">ラインストライク デッキビルダー</a>
-        <div class="admin-links">
-            <a href="view/admin_users.php" class="admin-link">管理者ページへ</a>
-            <p class="admin-note">作成途中のために、常時表示しています</p>
-        </div>
         <nav class="header-nav">
+            <a href="admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
             <a href="view/construction.php" class="nav-button">新規デッキ登録</a>
             <!-- TODO: ログイン状態によってボタンの表示を切り替える -->
             <a href="view/login.php" class="nav-button">ログイン</a>
             <a href="view/signup.php" class="nav-button">サインアップ</a>
             <a href="view/mypage.php" class="nav-button">マイデッキ保管庫</a>
             <p class="nav-note">※ログイン後はログイン、サインアップボタンが消えてマイページボタンだけになります</p>
+            <p class="nav-note">※作成途中のため、管理者ページへのリンクを常時表示しています。</p>
         </nav>
     </header>
 

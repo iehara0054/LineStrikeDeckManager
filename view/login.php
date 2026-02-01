@@ -11,6 +11,10 @@
     <header>
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">ログインページ</h1>
+        <nav class="header-nav">
+            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
+            <a href="../index.php" class="nav-button">トップページ</a>
+        </nav>
     </header>
     <div class="login-container">
         <h1 class="login-title">ログイン</h1>

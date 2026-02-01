@@ -12,6 +12,7 @@
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">デッキ閲覧</h1>
         <nav class="header-nav">
+            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
             <a href="../index.php" class="nav-button">トップページ</a>
             <a href="construction.php" class="nav-button">新規デッキ登録</a>
             <a href="login.php" class="nav-button">ログイン</a>
@@ -25,8 +26,8 @@
         <!-- TODO: コピーしてマイページに保存ボタンにPHP処理を実装する（デッキをコピーしてマイページに保存） -->
         <!-- TODO: コピーして編集リンクにデッキIDをパラメータとして渡す（例: construction.php?copy_from=デッキID） -->
         <div class="deck-tabs">
-            <a href="construction.php" class="deck-tab active">コピーしてマイページに保存</a>
-            <a href="construction.php" class="deck-tab">コピーして編集</a>
+            <a href="construction.php" class="deck-tab active">マイデッキ保管庫にコピーを保存</a>
+            <a href="construction.php" class="deck-tab">編集ページへ移動（その後、マイデッキ保管庫へ保存が可能です）</a>
         </div>
 
         <div class="deck-content-wrapper">

@@ -12,6 +12,7 @@
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">編集ページ</h1>
         <nav class="header-nav">
+            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
             <a href="../index.php" class="nav-button">トップページ</a>
             <a href="mypage.php" class="nav-button">マイデッキ保管庫</a>
         </nav>
