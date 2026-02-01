@@ -5,19 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="css/styles.css?v=6">
+    <link rel="stylesheet" href="css/styles.css?v=9">
 </head>
 <body class="fixed-layout page-index">
     <header>
         <a href="index.php" class="site-title">ラインストライク デッキビルダー</a>
         <nav class="header-nav">
             <a href="admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="view/construction.php" class="nav-button">新規デッキ登録</a>
             <!-- TODO: ログイン状態によってボタンの表示を切り替える -->
-            <a href="view/login.php" class="nav-button">ログイン</a>
-            <a href="view/signup.php" class="nav-button">サインアップ</a>
-            <a href="view/mypage.php" class="nav-button">マイデッキ保管庫</a>
-            <p class="nav-note">※ログイン後はログイン、サインアップボタンが消えてマイページボタンだけになります</p>
+            <a href="view/login.php" class="nav-button">マイデッキ保管庫</a>
             <p class="nav-note">※作成途中のため、管理者ページへのリンクを常時表示しています。</p>
         </nav>
     </header>
@@ -180,54 +176,6 @@
                     デッキの最初の<br>一枚を表示する
                 </div>
             </a>
-
-            <!-- デッキカード 19 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
-
-            <!-- デッキカード 20 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
-
-            <!-- デッキカード 21 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
-
-            <!-- デッキカード 22 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
-
-            <!-- デッキカード 23 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
-
-            <!-- デッキカード 24 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
             </div>
 
             <!-- お知らせ欄 -->
@@ -249,6 +197,10 @@
                             <li>デッキ閲覧</li>
                             <li>デッキ編集機能</li>
                             <li>マイデッキ保管庫機能</li>
+                            <li>カード詳細の位置は全てのページで同じ。左側へ</li>
+                            <li>人気デッキを掲載する（期間とこれまでのトータルのランキング）</li>
+                            <li>常にマイデッキ保管庫から新規デッキをつくる</li>
+                            <li>編集ページの作成中のデッキは、カードの絵柄も表示する</li>
                         </ul>
                     </div>
                 </div>
