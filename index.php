@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="css/styles.css?v=3">
+    <link rel="stylesheet" href="css/styles.css?v=6">
 </head>
 <body class="fixed-layout page-index">
     <header>
@@ -228,54 +228,30 @@
                     デッキの最初の<br>一枚を表示する
                 </div>
             </a>
+            </div>
 
-            <!-- デッキカード 25 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
+            <!-- お知らせ欄 -->
+            <div class="news-panel">
+                <div class="news-header">お知らせ</div>
+                <div class="news-content">
+                    <ul class="news-list">
+                        <li class="news-item">
+                            <span class="news-date">2025/01/01</span>
+                            <span class="news-text">サイトを公開しました。</span>
+                        </li>
+                    </ul>
+                    <div class="news-schedule">
+                        <p class="news-schedule-title">【今後の予定】</p>
+                        <ul class="news-schedule-list">
+                            <li>サインアップ機能</li>
+                            <li>ログイン機能</li>
+                            <li>新規デッキ登録</li>
+                            <li>デッキ閲覧</li>
+                            <li>デッキ編集機能</li>
+                            <li>マイデッキ保管庫機能</li>
+                        </ul>
+                    </div>
                 </div>
-            </a>
-
-            <!-- デッキカード 26 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
-
-            <!-- デッキカード 27 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
-
-            <!-- デッキカード 28 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
-
-            <!-- デッキカード 29 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
-
-            <!-- デッキカード 30 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    デッキの最初の<br>一枚を表示する
-                </div>
-            </a>
             </div>
         </div>
     </main>
