@@ -14,7 +14,6 @@
         <nav class="header-nav">
             <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
             <a href="../index.php" class="nav-button">トップページ</a>
-            <a href="login.php" class="nav-button">ログイン</a>
         </nav>
     </header>
 
