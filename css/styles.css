@@ -226,6 +226,9 @@ a.site-title:hover {
     margin: 0;
     text-align: center;
     flex-shrink: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header-nav {
