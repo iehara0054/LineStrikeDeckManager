@@ -498,7 +498,7 @@ main {
 }
 
 .deck-card-thumbnail {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 5 / 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -507,7 +507,6 @@ main {
     color: #5a7a9e;
     font-size: 13px;
     line-height: 1.6;
-    overflow: hidden;
 }
 
 .deck-card-thumbnail img {
@@ -1750,5 +1749,393 @@ a.user-name:hover {
     .admin-table {
         display: block;
         overflow-x: auto;
+    }
+}
+
+/* ================================================
+   デッキ構築画面（新レイアウト）
+   ================================================ */
+
+.construction-main-new {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    overflow: hidden;
+    min-height: 0;
+    background-color: #1a1a2e;
+}
+
+/* パネル共通ヘッダー（新） */
+.panel-header-new {
+    background-color: #0d0d1a;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #3a3a5e;
+    border-bottom: none;
+}
+
+.panel-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.panel-title::before {
+    content: "◆";
+    color: #ffd700;
+    font-size: 10px;
+}
+
+/* 左側: カードリストパネル */
+.card-list-panel-new {
+    flex: 1;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.card-list-panel-new .panel-header-new {
+    flex-wrap: wrap;
+}
+
+/* 属性タブ */
+.element-tabs {
+    display: flex;
+    gap: 3px;
+    margin-left: auto;
+}
+
+.element-tab {
+    padding: 4px 8px;
+    font-size: 11px;
+    border: 1px solid #3a3a5e;
+    background-color: #2a2a4e;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.element-tab:hover {
+    background-color: #3a3a5e;
+    color: #fff;
+}
+
+.element-tab.active {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+    color: #fff;
+}
+
+.element-tab[data-element="fire"].active { background-color: #d32f2f; border-color: #d32f2f; }
+.element-tab[data-element="water"].active { background-color: #1976d2; border-color: #1976d2; }
+.element-tab[data-element="thunder"].active { background-color: #fbc02d; border-color: #fbc02d; color: #333; }
+.element-tab[data-element="wind"].active { background-color: #388e3c; border-color: #388e3c; }
+.element-tab[data-element="light"].active { background-color: #ff8f00; border-color: #ff8f00; }
+.element-tab[data-element="dark"].active { background-color: #512da8; border-color: #512da8; }
+
+/* カードリストコンテンツ */
+.card-list-content {
+    flex: 1;
+    background-color: #252540;
+    border: 2px solid #3a3a5e;
+    border-top: none;
+    border-bottom: none;
+    padding: 10px;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.card-grid-new {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.game-card-new {
+    aspect-ratio: 3 / 4;
+    background-color: #1a1a2e;
+    border: 2px solid #3a3a5e;
+    cursor: pointer;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+.game-card-new:hover {
+    border-color: #ffd700;
+    transform: scale(1.02);
+}
+
+.game-card-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* カードリストフッター */
+.card-list-footer {
+    background-color: #0d0d1a;
+    border: 2px solid #3a3a5e;
+    border-top: none;
+    padding: 8px;
+    text-align: center;
+}
+
+.page-indicator {
+    color: #aaa;
+    font-size: 12px;
+}
+
+/* 中央パネル */
+.center-panel {
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 0;
+}
+
+/* カード詳細パネル */
+.card-detail-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.card-detail-content {
+    background-color: #252540;
+    border: 2px solid #3a3a5e;
+    border-top: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-detail-image {
+    position: relative;
+    width: 100%;
+}
+
+.card-detail-image img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border: 2px solid #3a3a5e;
+}
+
+.card-stats {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.stat-value {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.stat-attack {
+    background-color: #d32f2f;
+}
+
+.stat-defense {
+    background-color: #1976d2;
+}
+
+/* スキル詳細パネル */
+.skill-detail-panel {
+    flex-shrink: 0;
+}
+
+.skill-detail-content {
+    background-color: #252540;
+    border: 2px solid #3a3a5e;
+    border-top: none;
+    padding: 10px;
+    min-height: 60px;
+}
+
+.skill-name {
+    color: #ffd700;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.skill-description {
+    color: #ddd;
+    font-size: 11px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* 右側: デッキリストパネル */
+.deck-list-panel {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.deck-list-hint {
+    background-color: #252540;
+    border: 2px solid #3a3a5e;
+    border-top: none;
+    border-bottom: none;
+    padding: 8px 10px;
+}
+
+.deck-list-hint p {
+    color: #aaa;
+    font-size: 11px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* 5x3 デッキグリッド */
+.deck-grid-5x5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+    background-color: #252540;
+    border: 2px solid #3a3a5e;
+    border-top: none;
+    padding: 10px;
+}
+
+.deck-slot-new {
+    aspect-ratio: 3 / 4;
+    background-color: #1a1a2e;
+    border: 1px solid #3a3a5e;
+    cursor: pointer;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+.deck-slot-new:hover {
+    border-color: #ff6600;
+}
+
+.deck-slot-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.deck-slot-new.empty {
+    background-color: #0d0d1a;
+    border-style: dashed;
+}
+
+/* デッキアクション（新） */
+.deck-actions-new {
+    background-color: #0d0d1a;
+    border: 2px solid #3a3a5e;
+    border-top: none;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.deck-name-input-new {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 13px;
+    border: 1px solid #3a3a5e;
+    background-color: #252540;
+    color: #fff;
+    outline: none;
+}
+
+.deck-name-input-new:focus {
+    border-color: #ffd700;
+}
+
+.deck-name-input-new::placeholder {
+    color: #666;
+}
+
+.save-deck-button-new {
+    padding: 8px 20px;
+    font-size: 13px;
+    border: none;
+    background-color: #2d6a4f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.save-deck-button-new:hover {
+    background-color: #40916c;
+}
+
+/* 構築画面（新）レスポンシブ */
+@media (max-width: 1100px) {
+    .construction-main-new {
+        flex-wrap: wrap;
+    }
+
+    .card-list-panel-new {
+        flex: 1;
+        min-width: 280px;
+        max-height: 400px;
+    }
+
+    .center-panel {
+        width: 180px;
+    }
+
+    .deck-list-panel {
+        flex: 1;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .construction-main-new {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .card-list-panel-new,
+    .center-panel,
+    .deck-list-panel {
+        width: 100%;
+        min-width: unset;
+        max-height: none;
+    }
+
+    .center-panel {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .card-detail-panel,
+    .skill-detail-panel {
+        flex: 1;
+    }
+
+    .deck-grid-5x5 {
+        max-width: 100%;
     }
 }

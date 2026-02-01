@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デッキ構築 - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css?v=17">
 </head>
 <body class="fixed-layout page-construction">
     <header>
@@ -18,239 +18,102 @@
         </nav>
     </header>
 
-    <main class="construction-main">
-        <!-- 左側: 検索ボックス＆プレビュー -->
-        <aside class="search-panel">
-            <div class="panel-header">検索ボックス</div>
-            <div class="panel-content">
-                <input type="text" class="search-input" placeholder="カード名で検索">
-                <div class="element-filter">
-                    <label class="element-checkbox">
-                        <input type="checkbox" name="element" value="fire" checked>
-                        <span class="element-label element-fire">火</span>
-                    </label>
-                    <label class="element-checkbox">
-                        <input type="checkbox" name="element" value="water" checked>
-                        <span class="element-label element-water">水</span>
-                    </label>
-                    <label class="element-checkbox">
-                        <input type="checkbox" name="element" value="thunder" checked>
-                        <span class="element-label element-thunder">雷</span>
-                    </label>
-                    <label class="element-checkbox">
-                        <input type="checkbox" name="element" value="wind" checked>
-                        <span class="element-label element-wind">風</span>
-                    </label>
-                    <label class="element-checkbox">
-                        <input type="checkbox" name="element" value="light" checked>
-                        <span class="element-label element-light">光</span>
-                    </label>
-                    <label class="element-checkbox">
-                        <input type="checkbox" name="element" value="dark" checked>
-                        <span class="element-label element-dark">闇</span>
-                    </label>
+    <main class="construction-main-new">
+        <!-- 左側: カードリスト -->
+        <aside class="card-list-panel-new">
+            <div class="panel-header-new">
+                <span class="panel-title">カードリスト</span>
+                <div class="element-tabs">
+                    <button type="button" class="element-tab active" data-element="fire">火</button>
+                    <button type="button" class="element-tab" data-element="water">水</button>
+                    <button type="button" class="element-tab" data-element="thunder">雷</button>
+                    <button type="button" class="element-tab" data-element="wind">風</button>
+                    <button type="button" class="element-tab" data-element="light">光</button>
+                    <button type="button" class="element-tab" data-element="dark">闇</button>
                 </div>
             </div>
-            <!-- カードプレビュー -->
-            <div class="card-preview">
-                <div class="preview-image">
-                    <img src="../images/cards/sample.jpg" alt="選択中のカード" id="preview-img">
+            <div class="card-list-content">
+                <div class="card-grid-new">
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード1"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード2"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード4"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード5"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード6"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード9"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード10"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード12"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード13"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード14"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード15"></div>
+                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード16"></div>
                 </div>
-                <div class="preview-info">
-                    <p class="preview-name" id="preview-name">カード名</p>
-                </div>
+            </div>
+            <div class="card-list-footer">
+                <span class="page-indicator">1/7</span>
             </div>
         </aside>
 
-        <!-- 中央: カード一覧 -->
-        <section class="card-list-panel">
-            <div class="card-grid">
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード1"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード2"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード3"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード4"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード5"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード6"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード7"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード8"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード9"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード10"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード11"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード12"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード13"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード14"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード15"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード16"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード17"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード18"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード19"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード20"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード21"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード22"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード23"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード24"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード25"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード26"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード27"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード28"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード29"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード30"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード31"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード32"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード33"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード34"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード35"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード36"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード37"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード38"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード39"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード40"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード41"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード42"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード43"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード44"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード45"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード46"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード47"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード48"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード49"></div></div>
-                <div class="game-card"><div class="card-image"><img src="../images/cards/sample.jpg" alt="カード50"></div></div>
+        <!-- 中央: カード詳細 + スキル詳細 -->
+        <section class="center-panel">
+            <!-- カード詳細 -->
+            <div class="card-detail-panel">
+                <div class="panel-header-new">
+                    <span class="panel-title">カード詳細</span>
+                </div>
+                <div class="card-detail-content">
+                    <div class="card-detail-image">
+                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="選択中のカード" id="detail-card-img">
+                        <div class="card-stats">
+                            <span class="stat-value stat-attack">1</span>
+                            <span class="stat-value stat-defense">2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- スキル詳細 -->
+            <div class="skill-detail-panel">
+                <div class="panel-header-new">
+                    <span class="panel-title">スキル詳細</span>
+                </div>
+                <div class="skill-detail-content">
+                    <p class="skill-name" id="skill-name">移動の達人</p>
+                    <p class="skill-description" id="skill-description">次の自分のターンの方向を無視して移動できる。</p>
+                </div>
             </div>
         </section>
 
-        <!-- 右側: デッキ編集 -->
-        <aside class="deck-panel">
-            <div class="panel-header">
-                <span>デッキ名:</span>
-                <input type="text" class="deck-name-input" placeholder="デッキ名を入力">
+        <!-- 右側: デッキリスト -->
+        <aside class="deck-list-panel">
+            <div class="panel-header-new">
+                <span class="panel-title">デッキリスト</span>
             </div>
-            <div class="panel-content">
-                <ul class="deck-slot-list">
-                    <li class="deck-slot">
-                        <span class="slot-name">カード1</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード2</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード3</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード4</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード5</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード6</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード7</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード8</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード9</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード10</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード11</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード12</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード13</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード14</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                    <li class="deck-slot">
-                        <span class="slot-name">カード15</span>
-                        <div class="slot-count-controls">
-                            <button type="button" class="count-btn count-minus">－</button>
-                            <span class="slot-count">1</span>
-                            <button type="button" class="count-btn count-plus">＋</button>
-                        </div>
-                    </li>
-                </ul>
-                <div class="deck-actions">
-                    <!-- TODO: フォーム送信またはJavaScriptでデッキデータをPHPへ送信する処理を実装 -->
-                    <button type="button" class="save-deck-button">保存</button>
-                </div>
+            <div class="deck-list-hint">
+                <p>デッキリストのカードを押すとリストから外すことができます。</p>
+            </div>
+            <div class="deck-grid-5x5">
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+            </div>
+            <div class="deck-actions-new">
+                <input type="text" class="deck-name-input-new" placeholder="デッキ名を入力">
+                <button type="button" class="save-deck-button-new">保存</button>
             </div>
         </aside>
     </main>
