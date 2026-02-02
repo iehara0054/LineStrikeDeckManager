@@ -61,11 +61,6 @@
         <!-- TODO: 各デッキカードのリンクにデッキIDをパラメータとして渡す（例: deck.php?id=デッキID） -->
         <div class="deck-grid-wrapper">
             <div class="deck-grid">
-            <!-- 新規登録カード -->
-            <a href="view/construction.php" class="deck-card index-new-deck-card">
-                <div class="deck-card-header">新規登録</div>
-                <div class="index-new-deck-plus">＋</div>
-            </a>
             <!-- デッキカード1 -->
             <a href="view/deck.php" class="deck-card">
                 <div class="deck-card-header">デッキ名1</div>
@@ -180,6 +175,11 @@
                         <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
                     </div>
                 </div>
+            </a>
+            <!-- 新規登録カード -->
+            <a href="view/construction.php" class="deck-card index-new-deck-card">
+                <div class="deck-card-header">新規登録</div>
+                <div class="index-new-deck-plus">＋</div>
             </a>
             </div>
         </div>
