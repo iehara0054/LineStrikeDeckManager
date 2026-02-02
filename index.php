@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="css/styles.css?v=14">
+    <link rel="stylesheet" href="css/styles.css?v=20">
 </head>
 <body class="fixed-layout page-index">
     <header>
@@ -23,6 +23,9 @@
     </div>
 
     <main class="index-main">
+        <div class="index-actions">
+            <a href="view/construction.php" class="new-deck-button primary-button">新規登録</a>
+        </div>
         <div class="index-header">
             <div class="section-header-row">
                 <h2 class="section-title">人気デッキ <a href="view/decklist.php" style="margin-left: 20px; font-weight: normal;">すべてのデッキ</a></h2>
@@ -37,21 +40,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード15">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -61,21 +64,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード15">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -85,21 +88,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード15">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -109,21 +112,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード15">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -133,21 +136,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード15">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
                     </div>
                 </div>
             </a>

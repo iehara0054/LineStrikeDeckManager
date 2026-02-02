@@ -9,6 +9,7 @@
 <body class="fixed-layout page-decklist">
     <header>
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
+        <h1 class="page-title">すべてのデッキ</h1>
         <nav class="header-nav">
             <a href="../index.php" class="nav-button">トップページ</a>
             <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>

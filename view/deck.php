@@ -30,8 +30,7 @@
         <!-- 左側：デッキ編成エリア -->
         <aside class="card-list-panel-new">
             <div class="panel-header-new">
-                <span class="panel-title">デッキ名 - 制作者：制作者名</span>
-                <button type="button" class="copy-deck-button">コピーしてマイデッキ保管庫に保存</button>
+                <span class="panel-title"><button type="button" class="copy-deck-button">コピーして編集画面へ</button></span>
             </div>
             <div class="card-list-content">
                 <!-- デッキ情報 -->
