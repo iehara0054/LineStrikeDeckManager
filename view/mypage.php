@@ -24,9 +24,6 @@
     </nav>
 
     <main class="mypage-main">
-        <div class="mypage-actions">
-            <a href="construction.php" class="new-deck-button primary-button">新規登録</a>
-        </div>
         <div class="mypage-deck-grid">
             <!-- 新規登録カード -->
             <a href="construction.php" class="mypage-deck-card new-deck-card">
