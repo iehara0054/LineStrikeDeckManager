@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デッキ構築 - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../css/styles.css?v=25">
+    <link rel="stylesheet" href="../css/styles.css?v=29">
 </head>
 <body class="fixed-layout page-construction">
     <header>
@@ -29,6 +29,9 @@
     <main class="construction-main-new">
         <!-- 左側: カードリスト -->
         <aside class="card-list-panel-new">
+            <div class="panel-header-new">
+                <span class="panel-title">カードリスト</span>
+            </div>
             <!-- 属性タブバー -->
             <div class="element-tabs-bar">
                 <button type="button" class="grid-view-btn" title="グリッド表示">
@@ -53,9 +56,6 @@
                     <option value="type3">タイプ3</option>
                 </select>
                 <input type="text" class="search-input" placeholder="カード名で検索">
-            </div>
-            <div class="panel-header-new">
-                <span class="panel-title">カードリスト</span>
             </div>
             <div class="card-list-content">
                 <div class="card-grid-new">

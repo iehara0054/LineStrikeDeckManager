@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デッキ詳細 - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../css/styles.css?v=23">
+    <link rel="stylesheet" href="../css/styles.css?v=29">
 </head>
 <body class="fixed-layout page-deck">
     <header>
@@ -30,14 +30,10 @@
         <!-- 左側：デッキ編成エリア -->
         <aside class="card-list-panel-new">
             <div class="panel-header-new">
-                <span class="panel-title"><button type="button" class="copy-deck-button">コピーして編集画面へ</button></span>
+                <span class="panel-title">デッキ名 ー 制作者：制作者名</span>
+                <a href="construction.php" class="copy-deck-button">コピーして編集画面へ</a>
             </div>
             <div class="card-list-content">
-                <!-- デッキ情報 -->
-                <div class="deck-info-section">
-                    <h2 class="deck-detail-name">デッキ名 <span class="deck-creator-inline">ー 制作者：制作者名</span></h2>
-                </div>
-
                 <!-- 5x3 カードグリッド -->
                 <div class="formation-grid">
                         <!-- 1行目 -->

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="css/styles.css?v=20">
+    <link rel="stylesheet" href="css/styles.css?v=28">
 </head>
 <body class="fixed-layout page-index">
     <header>
@@ -23,13 +23,39 @@
     </div>
 
     <main class="index-main">
-        <div class="index-actions">
-            <a href="view/construction.php" class="new-deck-button primary-button">新規登録</a>
+        <!-- お知らせ欄 -->
+        <div class="news-panel news-panel-full">
+            <div class="news-header">お知らせ</div>
+            <div class="news-content">
+                <ul class="news-list">
+                    <li class="news-item">
+                        <span class="news-date">2025/01/01</span>
+                        <span class="news-text">サイトを公開しました。</span>
+                    </li>
+                </ul>
+                <div class="news-schedule">
+                    <p class="news-schedule-title">【今後の予定】</p>
+                    <ul class="news-schedule-list">
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>サインアップ機能</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>ログイン機能</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>新規デッキ登録</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>デッキ閲覧</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>デッキ編集機能</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>マイデッキ保管庫機能</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>カード詳細の位置は全てのページで同じ。左側へ</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>人気デッキを掲載する（期間とこれまでのトータルのランキング）</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>常にマイデッキ保管庫から新規デッキをつくる</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>編集ページの作成中のデッキは、カードの絵柄も表示する</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>PP順にソート</span></label></li>
+                        <li><label><input type="checkbox" class="schedule-checkbox"><span>編集機能は、実際のゲーム画面と同じにする</span></label></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="index-header">
             <div class="section-header-row">
                 <h2 class="section-title">人気デッキ <a href="view/decklist.php" style="margin-left: 20px; font-weight: normal;">すべてのデッキ</a></h2>
-                <p class="section-hint">下記デッキカードをクリックすると、デッキの構成を閲覧できます。</p>
+                <p class="section-hint">下記デッキカードをクリックすると、デッキの構成を閲覧 / 編集できます。</p>
             </div>
         </div>
         <!-- TODO: 各デッキカードのリンクにデッキIDをパラメータとして渡す（例: deck.php?id=デッキID） -->
@@ -154,36 +180,12 @@
                     </div>
                 </div>
             </a>
-            </div>
 
-            <!-- お知らせ欄 -->
-            <div class="news-panel">
-                <div class="news-header">お知らせ</div>
-                <div class="news-content">
-                    <ul class="news-list">
-                        <li class="news-item">
-                            <span class="news-date">2025/01/01</span>
-                            <span class="news-text">サイトを公開しました。</span>
-                        </li>
-                    </ul>
-                    <div class="news-schedule">
-                        <p class="news-schedule-title">【今後の予定】</p>
-                        <ul class="news-schedule-list">
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>サインアップ機能</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>ログイン機能</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>新規デッキ登録</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>デッキ閲覧</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>デッキ編集機能</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>マイデッキ保管庫機能</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>カード詳細の位置は全てのページで同じ。左側へ</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>人気デッキを掲載する（期間とこれまでのトータルのランキング）</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>常にマイデッキ保管庫から新規デッキをつくる</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>編集ページの作成中のデッキは、カードの絵柄も表示する</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>PP順にソート</span></label></li>
-                            <li><label><input type="checkbox" class="schedule-checkbox"><span>編集機能は、実際のゲーム画面と同じにする</span></label></li>
-                        </ul>
-                    </div>
-                </div>
+            <!-- 新規登録カード -->
+            <a href="view/construction.php" class="deck-card index-new-deck-card">
+                <div class="deck-card-header">新規登録</div>
+                <div class="index-new-deck-plus">＋</div>
+            </a>
             </div>
         </div>
     </main>

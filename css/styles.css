@@ -385,6 +385,22 @@ main {
     gap: 15px;
 }
 
+/* トップページ新規登録カード */
+.index-new-deck-card:hover {
+    box-shadow: 0 6px 16px rgba(184, 134, 11, 0.3);
+    border-color: #b8860b;
+}
+
+.index-new-deck-plus {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #b8860b;
+    background-color: #faf6f0;
+}
+
 /* サイト説明文 */
 .site-description {
     background-color: #e8f0f6;
@@ -426,7 +442,7 @@ main {
 /* デッキ一覧グリッド */
 .deck-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 15px;
     flex: 1;
     align-content: start;
@@ -443,6 +459,47 @@ main {
     border: 1px solid #d0dbe5;
     display: flex;
     flex-direction: column;
+}
+
+.news-panel-full {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.news-panel-full .news-content {
+    display: block;
+    padding: 8px 15px;
+}
+
+.news-panel-full .news-list {
+    margin-bottom: 8px;
+}
+
+.news-panel-full .news-item {
+    padding: 4px 0;
+    border-bottom: none;
+}
+
+.news-panel-full .news-schedule {
+    margin-top: 0;
+}
+
+.news-panel-full .news-schedule-title {
+    display: inline;
+    margin-right: 15px;
+}
+
+.news-panel-full .news-schedule-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 3px 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.news-panel-full .news-schedule-list li {
+    display: inline-flex;
+    font-size: 12px;
 }
 
 .news-header {
@@ -2243,6 +2300,8 @@ a.user-name:hover {
     transition: background-color 0.2s;
     white-space: nowrap;
     margin-left: auto;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .copy-deck-button:hover {
