@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デッキ詳細 - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../css/styles.css?v=29">
+    <link rel="stylesheet" href="../css/styles.css?v=30">
 </head>
 <body class="fixed-layout page-deck">
     <header>

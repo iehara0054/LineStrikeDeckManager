@@ -2446,6 +2446,18 @@ a.user-name:hover {
     border-color: #e65c00;
 }
 
+/* デッキ閲覧ページ - カードグリッドをカラム幅いっぱいに拡大 */
+.page-deck .formation-grid {
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.page-deck .formation-slot {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 100 / 133;
+}
+
 /* ================================================
    編集ページ - コメント入力パネル（4カラム対応）
    ================================================ */
