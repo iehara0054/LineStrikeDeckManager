@@ -125,6 +125,39 @@ body.fixed-layout {
     border-color: #b8860b;
 }
 
+/* 新規登録ボタン共通 */
+.mypage-actions,
+.index-actions {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.new-deck-button.primary-button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #78590a 0%, #b8860b 100%);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.new-deck-button.primary-button:hover {
+    background: linear-gradient(90deg, #a67c00 0%, #d4a017 100%);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* トップページ用 - ブルー系 */
+.page-index .new-deck-button.primary-button {
+    background: linear-gradient(90deg, #0d2137 0%, #1a4a6e 100%);
+}
+.page-index .new-deck-button.primary-button:hover {
+    background: linear-gradient(90deg, #1a4a6e 0%, #2a6a9e 100%);
+}
+
 /* ログインページ - ティール系 */
 .page-login {
     background: linear-gradient(180deg, #e0f2f1 0%, #f4fafa 100%);
@@ -393,7 +426,7 @@ main {
 /* デッキ一覧グリッド */
 .deck-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     flex: 1;
     align-content: start;
@@ -510,7 +543,6 @@ main {
     display: flex;
     flex-direction: column;
     color: inherit;
-    padding-bottom: 5px;
 }
 
 .deck-card:hover {
@@ -527,11 +559,9 @@ main {
 }
 
 .deck-card-thumbnail {
-    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
     text-align: center;
     color: #5a7a9e;
     font-size: 13px;
@@ -547,15 +577,15 @@ main {
 .thumbnail-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2px;
+    grid-template-rows: repeat(3, auto);
+    gap: 0;
     width: 100%;
-    height: 100%;
 }
 
-.thumbnail-grid img {
+.deck-card-thumbnail .thumbnail-grid img {
+    display: block;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
@@ -1947,7 +1977,7 @@ a.user-name:hover {
 }
 
 .game-card-new {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
     background-color: #1a1a2e;
     border: 2px solid #3a3a5e;
     cursor: pointer;
@@ -2632,6 +2662,8 @@ a.user-name:hover {
 .page-construction .card-list-content {
     background-color: #fff;
     border: 1px solid #d0dbe5;
+    max-height: 520px;
+    overflow-y: auto;
 }
 
 .page-construction .game-card-new {

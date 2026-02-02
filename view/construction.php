@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デッキ構築 - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../css/styles.css?v=17">
+    <link rel="stylesheet" href="../css/styles.css?v=25">
 </head>
 <body class="fixed-layout page-construction">
     <header>
@@ -59,26 +59,27 @@
             </div>
             <div class="card-list-content">
                 <div class="card-grid-new">
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード1"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード2"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード4"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード5"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード6"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード9"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード10"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード12"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード13"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード14"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード15"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード16"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード1"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード2"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード3"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード4"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード5"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード6"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード7"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード8"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード9"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード10"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード11"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード12"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード13"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード14"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード15"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード16"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード17"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード18"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード19"></div>
+                    <div class="game-card-new"><img src="../img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード20"></div>
                 </div>
-            </div>
-            <div class="card-list-footer">
-                <span class="page-indicator">1/7</span>
             </div>
         </aside>
 
@@ -91,14 +92,10 @@
                 <div class="card-detail-content">
                     <div class="card-detail-image">
                         <img src="../img/card_red/幻視の巫女カレン.jpg" alt="選択中のカード" id="detail-card-img">
-                        <div class="card-stats">
-                            <span class="stat-value stat-attack">1</span>
-                            <span class="stat-value stat-defense">2</span>
-                        </div>
                     </div>
                     <div class="skill-detail-content">
-                        <p class="skill-name" id="skill-name">移動の達人</p>
-                        <p class="skill-description" id="skill-description">次の自分のターンの方向を無視して移動できる。</p>
+                        <p class="skill-name" id="skill-name">スキル名</p>
+                        <p class="skill-description" id="skill-description">スキルの説明がここに表示されます。</p>
                     </div>
                 </div>
             </div>

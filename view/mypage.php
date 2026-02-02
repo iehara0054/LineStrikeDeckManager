@@ -10,7 +10,7 @@
 <body class="page-mypage">
     <header>
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
-        <h1 class="page-title">マイページ</h1>
+        <h1 class="page-title">マイデッキ保管庫</h1>
         <nav class="header-nav">
             <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
             <a href="../index.php" class="nav-button">トップページ</a>
@@ -24,6 +24,9 @@
     </nav>
 
     <main class="mypage-main">
+        <div class="mypage-actions">
+            <a href="construction.php" class="new-deck-button primary-button">新規登録</a>
+        </div>
         <div class="mypage-deck-grid">
             <!-- デッキカード1 -->
             <div class="mypage-deck-card">
