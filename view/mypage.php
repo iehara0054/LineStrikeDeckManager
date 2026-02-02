@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>マイページ - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css?v=32">
 </head>
 <body class="page-mypage">
     <header>
@@ -33,6 +33,25 @@
             <!-- デッキカード2 -->
             <div class="mypage-deck-card">
                 <div class="mypage-deck-header">デッキ名</div>
+                <div class="mypage-deck-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード1">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード4">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード7">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード10">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード13">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
+                    </div>
+                </div>
                 <div class="mypage-deck-actions">
                     <a href="construction.php?id=2" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(2)">削除</button>
@@ -42,6 +61,25 @@
             <!-- デッキカード3 -->
             <div class="mypage-deck-card">
                 <div class="mypage-deck-header">デッキ名</div>
+                <div class="mypage-deck-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード1">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード4">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード7">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード10">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード13">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
+                    </div>
+                </div>
                 <div class="mypage-deck-actions">
                     <a href="construction.php?id=3" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(3)">削除</button>
@@ -51,6 +89,25 @@
             <!-- デッキカード4 -->
             <div class="mypage-deck-card">
                 <div class="mypage-deck-header">デッキ名</div>
+                <div class="mypage-deck-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード1">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード4">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード7">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード10">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード13">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
+                    </div>
+                </div>
                 <div class="mypage-deck-actions">
                     <a href="construction.php?id=4" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(4)">削除</button>
@@ -60,6 +117,25 @@
             <!-- デッキカード5 -->
             <div class="mypage-deck-card">
                 <div class="mypage-deck-header">デッキ名</div>
+                <div class="mypage-deck-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード1">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード4">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード7">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード10">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード13">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
+                    </div>
+                </div>
                 <div class="mypage-deck-actions">
                     <a href="construction.php?id=5" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(5)">削除</button>
@@ -69,6 +145,25 @@
             <!-- デッキカード6 -->
             <div class="mypage-deck-card">
                 <div class="mypage-deck-header">デッキ名</div>
+                <div class="mypage-deck-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード1">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード4">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード7">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード10">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード13">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
+                    </div>
+                </div>
                 <div class="mypage-deck-actions">
                     <a href="construction.php?id=6" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(6)">削除</button>
@@ -78,6 +173,25 @@
             <!-- デッキカード7 -->
             <div class="mypage-deck-card">
                 <div class="mypage-deck-header">デッキ名</div>
+                <div class="mypage-deck-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード1">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード4">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード7">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード10">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード13">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
+                    </div>
+                </div>
                 <div class="mypage-deck-actions">
                     <a href="construction.php?id=7" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(7)">削除</button>
@@ -87,6 +201,25 @@
             <!-- デッキカード8 -->
             <div class="mypage-deck-card">
                 <div class="mypage-deck-header">デッキ名</div>
+                <div class="mypage-deck-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード1">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード4">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード7">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード10">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード13">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
+                    </div>
+                </div>
                 <div class="mypage-deck-actions">
                     <a href="construction.php?id=8" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(8)">削除</button>
@@ -96,109 +229,29 @@
             <!-- デッキカード9 -->
             <div class="mypage-deck-card">
                 <div class="mypage-deck-header">デッキ名</div>
+                <div class="mypage-deck-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード1">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード4">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード7">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード10">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード13">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
+                        <img src="../img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
+                    </div>
+                </div>
                 <div class="mypage-deck-actions">
                     <a href="construction.php?id=9" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(9)">削除</button>
                     <button type="button" class="mypage-deck-button" onclick="copyDeck(9)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード10 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=10" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(10)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(10)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード11 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=11" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(11)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(11)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード12 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=12" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(12)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(12)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード13 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=13" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(13)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(13)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード14 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=14" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(14)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(14)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード15 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=15" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(15)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(15)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード16 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=16" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(16)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(16)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード17 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=17" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(17)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(17)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード18 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=18" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(18)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(18)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード19 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=19" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(19)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(19)">コピー</button>
-                </div>
-            </div>
-            <!-- デッキカード20 -->
-            <div class="mypage-deck-card">
-                <div class="mypage-deck-header">デッキ名</div>
-                <div class="mypage-deck-actions">
-                    <a href="construction.php?id=20" class="mypage-deck-button">編集</a>
-                    <button type="button" class="mypage-deck-button" onclick="confirmDelete(20)">削除</button>
-                    <button type="button" class="mypage-deck-button" onclick="copyDeck(20)">コピー</button>
                 </div>
             </div>
         </div>

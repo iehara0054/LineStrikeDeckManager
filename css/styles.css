@@ -1348,17 +1348,38 @@ footer {
     border-bottom: none;
 }
 
-.mypage-deck-actions {
-    padding: 15px;
+.mypage-deck-thumbnail {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mypage-deck-thumbnail .thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    width: 100%;
+}
+
+.mypage-deck-thumbnail .thumbnail-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.mypage-deck-actions {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
 }
 
 .mypage-deck-button {
     display: block;
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 6px 12px;
+    font-size: 12px;
     text-align: center;
     text-decoration: none;
     border: 1px solid #d0dbe5;
@@ -1366,6 +1387,7 @@ footer {
     color: #333;
     cursor: pointer;
     transition: all 0.2s;
+    flex: 1;
 }
 
 .mypage-deck-button:hover {
