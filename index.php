@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="css/styles.css?v=28">
+    <link rel="stylesheet" href="css/styles.css?v=33">
 </head>
 <body class="fixed-layout page-index">
     <header>
@@ -61,122 +61,118 @@
         <!-- TODO: 各デッキカードのリンクにデッキIDをパラメータとして渡す（例: deck.php?id=デッキID） -->
         <div class="deck-grid-wrapper">
             <div class="deck-grid">
-            <!-- デッキカード 1 -->
+            <!-- デッキカード1 -->
             <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
+                <div class="deck-card-header">デッキ名1</div>
+                <div class="deck-card-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード1">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード4">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード7">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード10">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード13">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
+                    </div>
+                </div>
+            </a>
+            <!-- デッキカード2 -->
+            <a href="view/deck.php" class="deck-card">
+                <div class="deck-card-header">デッキ名2</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード3">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード6">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード9">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード12">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード15">
+                    </div>
+                </div>
+            </a>
+            <!-- デッキカード3 -->
+            <a href="view/deck.php" class="deck-card">
+                <div class="deck-card-header">デッキ名3</div>
+                <div class="deck-card-thumbnail">
+                    <div class="thumbnail-grid">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード1">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード2">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード4">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード5">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード7">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード8">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード10">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード11">
+                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード13">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード14">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
                     </div>
                 </div>
             </a>
-
-            <!-- デッキカード 2 -->
+            <!-- デッキカード4 -->
             <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
+                <div class="deck-card-header">デッキ名4</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード1">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード2">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード4">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード5">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード7">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード8">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード10">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード11">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード13">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード14">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
                     </div>
                 </div>
             </a>
-
-            <!-- デッキカード 3 -->
+            <!-- デッキカード5 -->
             <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
+                <div class="deck-card-header">デッキ名5</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード2">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード3">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード5">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード6">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード8">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード9">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード11">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード12">
                         <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
-                    </div>
-                </div>
-            </a>
-
-            <!-- デッキカード 4 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    <div class="thumbnail-grid">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
-                    </div>
-                </div>
-            </a>
-
-            <!-- デッキカード 5 -->
-            <a href="view/deck.php" class="deck-card">
-                <div class="deck-card-header">デッキ名</div>
-                <div class="deck-card-thumbnail">
-                    <div class="thumbnail-grid">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード1">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード2">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード3">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード4">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード5">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード6">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード7">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード8">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード9">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード10">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード11">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード12">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード13">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード14">
-                        <img src="img/list_cards/8a4b4aac5a19ec9801418de9113115f2.png" alt="カード15">
+                        <img src="img/list_cards/5b2101ca6b8ee105f0b2776c83157982.png" alt="カード14">
+                        <img src="img/list_cards/3537af89fa6f30e155e4c294ca816bb8.png" alt="カード15">
                     </div>
                 </div>
             </a>
