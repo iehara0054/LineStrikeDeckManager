@@ -47,6 +47,8 @@ body.fixed-layout {
         linear-gradient(rgba(45, 106, 79, 0.05) 1px, transparent 1px),
         linear-gradient(180deg, #e8f6ed 0%, #f4fbf6 100%);
     background-size: 20px 20px, 20px 20px, 100% 100%;
+    overflow: auto !important;
+    height: auto !important;
 }
 .page-construction header {
     background: linear-gradient(90deg, #1a3d2e 0%, #2d6a4f 100%);
@@ -397,6 +399,7 @@ main {
     align-content: start;
     overflow-y: auto;
     min-height: 0;
+    grid-auto-rows: auto;
 }
 
 /* お知らせ欄 */
@@ -470,6 +473,31 @@ main {
     font-size: 12px;
     color: #333;
     line-height: 1.8;
+    list-style: none;
+}
+
+.news-schedule-list li {
+    display: flex;
+    align-items: flex-start;
+}
+
+.news-schedule-list label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    width: 100%;
+}
+
+.schedule-checkbox {
+    margin-right: 8px;
+    margin-top: 3px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.news-schedule-list input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #999;
 }
 
 /* デッキカード */
@@ -479,7 +507,8 @@ main {
     cursor: pointer;
     transition: box-shadow 0.2s, border-color 0.2s;
     text-decoration: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
     color: inherit;
     padding-bottom: 5px;
 }
@@ -498,7 +527,7 @@ main {
 }
 
 .deck-card-thumbnail {
-    aspect-ratio: 5 / 3;
+    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -518,7 +547,7 @@ main {
 .thumbnail-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 2px;
     width: 100%;
     height: 100%;
@@ -528,6 +557,36 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+    background-color: #f5f5f5;
+    padding: 10px 30px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+}
+
+.breadcrumb a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: #0044aa;
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    margin: 0 8px;
+    color: #999;
+}
+
+.breadcrumb-current {
+    color: #333;
+    font-weight: 500;
 }
 
 /* フッター */
@@ -1255,8 +1314,10 @@ footer {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
     gap: 15px;
+    overflow: hidden;
+    min-height: 0;
 }
 
 /* タブナビゲーション */
@@ -1295,19 +1356,25 @@ a.user-name:hover {
 /* コンテンツラッパー */
 .deck-content-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     flex: 1;
+    overflow: hidden;
+    min-height: 0;
+    align-items: stretch;
 }
 
 /* デッキ編成エリア */
 .deck-formation-area {
     flex: 1;
+    min-width: 550px;
     background-color: #fff;
     border: 1px solid #d0dbe5;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    min-height: 0;
+    overflow-y: auto;
 }
 
 .deck-name-section {
@@ -1353,25 +1420,20 @@ a.user-name:hover {
     margin: 0;
 }
 
-/* コメントとカードグリッドの横並びコンテナ */
-.formation-with-comment {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-}
-
 /* 5x3 編成グリッド */
 .formation-grid {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    gap: 10px;
+    gap: 8px;
     flex-shrink: 0;
+    justify-self: center;
+    margin: 0 auto;
 }
 
 /* 編成スロット */
 .formation-slot {
-    width: 120px;
-    height: 160px;
+    width: 100px;
+    height: 133px;
     background-color: #e8f0f6;
     border: 1px solid #d0dbe5;
     cursor: pointer;
@@ -1432,20 +1494,35 @@ a.user-name:hover {
     color: #ffc107;
 }
 
-/* コメントセクション（カードエリア内） */
+/* コメント表示エリア */
+.comment-display-area {
+    padding: 15px;
+    background-color: #fff;
+    flex: 1;
+    overflow-y: auto;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* コメントセクション（右側パネル） */
 .comment-section {
     flex: 1;
-    min-width: 150px;
+    min-width: 320px;
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
 }
 
 .comment-label {
     font-size: 14px;
     font-weight: bold;
-    color: #5a7a9e;
-    padding: 10px 10px 5px 10px;
-    background-color: #f4f8fb;
-    border: 1px solid #d0dbe5;
-    border-bottom: none;
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #0d2137;
+    text-align: center;
     margin: 0;
 }
 
@@ -1453,11 +1530,10 @@ a.user-name:hover {
     font-size: 14px;
     color: #333;
     line-height: 1.6;
-    padding: 5px 10px 10px 10px;
-    background-color: #f4f8fb;
-    border: 1px solid #d0dbe5;
-    border-top: none;
-    min-height: 200px;
+    padding: 15px;
+    background-color: #fff;
+    flex: 1;
+    overflow-y: auto;
 }
 
 .comment-textarea {
@@ -1484,12 +1560,14 @@ a.user-name:hover {
 
 /* カード拡大表示パネル */
 .card-preview-panel {
-    width: 300px;
+    width: 220px;
     flex-shrink: 0;
     background-color: #fff;
     border: 1px solid #d0dbe5;
     display: flex;
     flex-direction: column;
+    min-height: 0;
+    gap: 0;
 }
 
 .card-preview-header {
@@ -1507,6 +1585,8 @@ a.user-name:hover {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    overflow-y: auto;
+    min-height: 0;
 }
 
 .card-preview-image {
@@ -1523,32 +1603,40 @@ a.user-name:hover {
 }
 
 /* デッキ画面レスポンシブ */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .deck-content-wrapper {
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .deck-formation-area {
+        flex: 1;
+        min-width: 280px;
     }
 
     .card-preview-panel {
-        width: 100%;
-    }
-
-    .card-preview-content {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 900px) {
-    .formation-with-comment {
-        flex-direction: column;
+        width: 180px;
     }
 
     .comment-section {
-        width: 100%;
+        flex: 1;
+        min-width: 280px;
     }
 }
 
 @media (max-width: 768px) {
+    .deck-content-wrapper {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .deck-formation-area,
+    .card-preview-panel,
+    .comment-section {
+        width: 100%;
+        min-width: unset;
+        flex: none;
+    }
+
     .formation-grid {
         grid-template-columns: repeat(5, 1fr);
         gap: 8px;
@@ -1916,8 +2004,9 @@ a.user-name:hover {
     border-top: none;
     padding: 8px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 8px;
 }
 
 .card-detail-image {
@@ -2089,6 +2178,22 @@ a.user-name:hover {
     background-color: #40916c;
 }
 
+.copy-deck-button {
+    padding: 6px 12px;
+    font-size: 12px;
+    border: none;
+    background-color: #5a3d7a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+.copy-deck-button:hover {
+    background-color: #7b52a8;
+}
+
 /* 構築画面（新）レスポンシブ */
 @media (max-width: 1100px) {
     .construction-main-new {
@@ -2138,4 +2243,507 @@ a.user-name:hover {
     .deck-grid-5x5 {
         max-width: 100%;
     }
+}
+
+/* ================================================
+   デッキ閲覧ページのライトモード（ダークモード解除）
+   ================================================ */
+
+.page-deck .construction-main-new {
+    background-color: transparent;
+}
+
+.page-deck .panel-header-new {
+    background: linear-gradient(90deg, #2d1b4e 0%, #5a3d7a 100%);
+    border: 1px solid #d0dbe5;
+}
+
+.page-deck .card-list-content {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+}
+
+.page-deck .card-detail-content {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+}
+
+.page-deck .card-detail-image img {
+    border: 1px solid #d0dbe5;
+}
+
+.page-deck .skill-detail-content {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+}
+
+.page-deck .skill-name {
+    color: #5a3d7a;
+}
+
+.page-deck .skill-description {
+    color: #333;
+}
+
+.page-deck .deck-list-hint {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+}
+
+.page-deck .deck-list-hint p {
+    color: #5a7a9e;
+}
+
+.page-deck .comment-display-area {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+    color: #333;
+}
+
+.page-deck .copy-deck-button {
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+}
+
+.page-deck .copy-deck-button:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+}
+
+/* ================================================
+   編集ページ - コメント入力パネル（4カラム対応）
+   ================================================ */
+
+/* 4カラムレイアウトのために既存パネルを調整 */
+.page-construction .card-list-panel-new {
+    flex: 1;
+    min-width: 300px;
+}
+
+.page-construction .center-panel {
+    width: 200px;
+}
+
+.page-construction .deck-list-panel {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* コメント入力パネル */
+.comment-input-panel {
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.comment-input-content {
+    flex: 1;
+    background-color: #252540;
+    border: 2px solid #3a3a5e;
+    border-top: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.comment-input-content .comment-textarea {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    padding: 10px;
+    font-size: 13px;
+    font-family: inherit;
+    border: 1px solid #3a3a5e;
+    background-color: #1a1a2e;
+    color: #ddd;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s;
+    line-height: 1.5;
+}
+
+.comment-input-content .comment-textarea:focus {
+    border-color: #ffd700;
+}
+
+.comment-input-content .comment-textarea::placeholder {
+    color: #666;
+}
+
+/* ================================================
+   編集ページ - 属性タブバー（ゲーム風デザイン）
+   ================================================ */
+
+.element-tabs-bar {
+    display: flex;
+    gap: 0;
+    background-color: #0d0d1a;
+    border: 2px solid #3a3a5e;
+    border-bottom: none;
+}
+
+/* グリッド表示ボタン */
+.grid-view-btn {
+    width: 40px;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    border-right: 1px solid #3a3a5e;
+    background-color: #2a2a4e;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-view-btn:hover {
+    background-color: #3a3a5e;
+    color: #fff;
+}
+
+.grid-icon {
+    font-size: 18px;
+}
+
+/* ソートボタン */
+.sort-btn {
+    width: 40px;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #2a2a4e;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort-btn:hover {
+    background-color: #3a3a5e;
+    color: #fff;
+}
+
+.sort-icon {
+    font-size: 16px;
+}
+
+.element-tab-wide {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-right: 1px solid #3a3a5e;
+    background-color: #2a2a4e;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.element-tab-wide:last-child {
+    border-right: 1px solid #3a3a5e;
+}
+
+.element-tab-wide:hover {
+    background-color: #3a3a5e;
+    color: #fff;
+}
+
+.element-tab-wide.active {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+.element-tab-wide[data-element="fire"].active {
+    background-color: #d32f2f;
+}
+
+.element-tab-wide[data-element="water"].active {
+    background-color: #1976d2;
+}
+
+.element-tab-wide[data-element="thunder"].active {
+    background-color: #fbc02d;
+    color: #333;
+}
+
+.element-tab-wide[data-element="wind"].active {
+    background-color: #388e3c;
+}
+
+.element-tab-wide[data-element="light"].active {
+    background-color: #ff8f00;
+}
+
+.element-tab-wide[data-element="dark"].active {
+    background-color: #512da8;
+}
+
+/* フィルターバー */
+.filter-bar {
+    display: flex;
+    gap: 8px;
+    background-color: #0d0d1a;
+    border: 2px solid #3a3a5e;
+    border-top: none;
+    border-bottom: none;
+    padding: 8px;
+}
+
+.filter-dropdown {
+    flex: 1;
+    height: 32px;
+    padding: 6px 10px;
+    font-size: 12px;
+    border: 1px solid #3a3a5e;
+    background-color: #252540;
+    color: #ddd;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.filter-dropdown:focus {
+    border-color: #ffd700;
+}
+
+.search-input {
+    flex: 2;
+    height: 32px;
+    padding: 6px 10px;
+    font-size: 12px;
+    border: 1px solid #3a3a5e;
+    background-color: #252540;
+    color: #ddd;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.search-input:focus {
+    border-color: #ffd700;
+}
+
+.search-input::placeholder {
+    color: #666;
+}
+
+/* ================================================
+   編集ページのライトモード（ダークモード解除）
+   ================================================ */
+
+.page-construction .construction-main-new {
+    background-color: transparent;
+}
+
+.page-construction .element-tabs-bar {
+    background: linear-gradient(90deg, #1a3d2e 0%, #2d6a4f 100%);
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .grid-view-btn,
+.page-construction .sort-btn {
+    background-color: #e8f6ed;
+    color: #1a3d2e;
+    border-right: 1px solid #d0dbe5;
+}
+
+.page-construction .grid-view-btn:hover,
+.page-construction .sort-btn:hover {
+    background-color: #d0e8d8;
+    color: #1a3d2e;
+}
+
+.page-construction .element-tab-wide {
+    background-color: #e8f6ed;
+    color: #1a3d2e;
+    border-right: 1px solid #d0dbe5;
+}
+
+.page-construction .element-tab-wide:hover {
+    background-color: #d0e8d8;
+    color: #1a3d2e;
+}
+
+.page-construction .element-tab-wide.active {
+    background-color: #2d6a4f;
+    color: #fff;
+}
+
+.page-construction .element-tab-wide[data-element="fire"].active {
+    background-color: #d32f2f;
+}
+
+.page-construction .element-tab-wide[data-element="water"].active {
+    background-color: #1976d2;
+}
+
+.page-construction .element-tab-wide[data-element="thunder"].active {
+    background-color: #fbc02d;
+    color: #333;
+}
+
+.page-construction .element-tab-wide[data-element="wind"].active {
+    background-color: #388e3c;
+}
+
+.page-construction .element-tab-wide[data-element="light"].active {
+    background-color: #ff8f00;
+}
+
+.page-construction .element-tab-wide[data-element="dark"].active {
+    background-color: #512da8;
+}
+
+.page-construction .filter-bar {
+    background-color: #e8f6ed;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .filter-dropdown,
+.page-construction .search-input {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .filter-dropdown:focus,
+.page-construction .search-input:focus {
+    border-color: #2d6a4f;
+}
+
+.page-construction .search-input::placeholder {
+    color: #999;
+}
+
+.page-construction .panel-header-new {
+    background: linear-gradient(90deg, #1a3d2e 0%, #2d6a4f 100%);
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .card-list-content {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .game-card-new {
+    background-color: #fff;
+    border: 2px solid #d0dbe5;
+}
+
+.page-construction .game-card-new:hover {
+    border-color: #2d6a4f;
+}
+
+.page-construction .card-list-footer {
+    background-color: #e8f6ed;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .page-indicator {
+    color: #1a3d2e;
+}
+
+.page-construction .card-detail-content {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .card-detail-image img {
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .skill-detail-content {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .skill-name {
+    color: #2d6a4f;
+}
+
+.page-construction .skill-description {
+    color: #333;
+}
+
+.page-construction .deck-list-hint {
+    background-color: #e8f6ed;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .deck-list-hint p {
+    color: #1a3d2e;
+}
+
+.page-construction .deck-grid-5x5 {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .deck-slot-new {
+    background-color: #e8f6ed;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .deck-slot-new:hover {
+    border-color: #2d6a4f;
+}
+
+.page-construction .deck-slot-new.empty {
+    background-color: #f4fbf6;
+    border-style: dashed;
+}
+
+.page-construction .deck-actions-new {
+    background-color: #e8f6ed;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .deck-name-input-new {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .deck-name-input-new:focus {
+    border-color: #2d6a4f;
+}
+
+.page-construction .deck-name-input-new::placeholder {
+    color: #999;
+}
+
+.page-construction .save-deck-button-new {
+    background-color: #2d6a4f;
+}
+
+.page-construction .save-deck-button-new:hover {
+    background-color: #40916c;
+}
+
+.page-construction .comment-input-content {
+    background-color: #fff;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .comment-input-content .comment-textarea {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #d0dbe5;
+}
+
+.page-construction .comment-input-content .comment-textarea:focus {
+    border-color: #2d6a4f;
+}
+
+.page-construction .comment-input-content .comment-textarea::placeholder {
+    color: #999;
 }

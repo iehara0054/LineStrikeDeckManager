@@ -18,19 +18,44 @@
         </nav>
     </header>
 
+    <nav class="breadcrumb">
+        <a href="../index.php">トップページ</a>
+        <span class="breadcrumb-separator">></span>
+        <a href="mypage.php">マイデッキ保管庫</a>
+        <span class="breadcrumb-separator">></span>
+        <span class="breadcrumb-current">デッキ編集</span>
+    </nav>
+
     <main class="construction-main-new">
         <!-- 左側: カードリスト -->
         <aside class="card-list-panel-new">
+            <!-- 属性タブバー -->
+            <div class="element-tabs-bar">
+                <button type="button" class="grid-view-btn" title="グリッド表示">
+                    <span class="grid-icon">⊞</span>
+                </button>
+                <button type="button" class="element-tab-wide active" data-element="fire">火</button>
+                <button type="button" class="element-tab-wide" data-element="water">水</button>
+                <button type="button" class="element-tab-wide" data-element="thunder">雷</button>
+                <button type="button" class="element-tab-wide" data-element="wind">風</button>
+                <button type="button" class="element-tab-wide" data-element="light">光</button>
+                <button type="button" class="element-tab-wide" data-element="dark">闇</button>
+                <button type="button" class="sort-btn" title="ソート">
+                    <span class="sort-icon">🕐</span>
+                </button>
+            </div>
+            <!-- フィルターバー -->
+            <div class="filter-bar">
+                <select class="filter-dropdown">
+                    <option value="all">すべて</option>
+                    <option value="type1">タイプ1</option>
+                    <option value="type2">タイプ2</option>
+                    <option value="type3">タイプ3</option>
+                </select>
+                <input type="text" class="search-input" placeholder="カード名で検索">
+            </div>
             <div class="panel-header-new">
                 <span class="panel-title">カードリスト</span>
-                <div class="element-tabs">
-                    <button type="button" class="element-tab active" data-element="fire">火</button>
-                    <button type="button" class="element-tab" data-element="water">水</button>
-                    <button type="button" class="element-tab" data-element="thunder">雷</button>
-                    <button type="button" class="element-tab" data-element="wind">風</button>
-                    <button type="button" class="element-tab" data-element="light">光</button>
-                    <button type="button" class="element-tab" data-element="dark">闇</button>
-                </div>
             </div>
             <div class="card-list-content">
                 <div class="card-grid-new">
@@ -57,9 +82,8 @@
             </div>
         </aside>
 
-        <!-- 中央: カード詳細 + スキル詳細 -->
+        <!-- 中央: カード詳細 -->
         <section class="center-panel">
-            <!-- カード詳細 -->
             <div class="card-detail-panel">
                 <div class="panel-header-new">
                     <span class="panel-title">カード詳細</span>
@@ -72,16 +96,10 @@
                             <span class="stat-value stat-defense">2</span>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- スキル詳細 -->
-            <div class="skill-detail-panel">
-                <div class="panel-header-new">
-                    <span class="panel-title">スキル詳細</span>
-                </div>
-                <div class="skill-detail-content">
-                    <p class="skill-name" id="skill-name">移動の達人</p>
-                    <p class="skill-description" id="skill-description">次の自分のターンの方向を無視して移動できる。</p>
+                    <div class="skill-detail-content">
+                        <p class="skill-name" id="skill-name">移動の達人</p>
+                        <p class="skill-description" id="skill-description">次の自分のターンの方向を無視して移動できる。</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -90,6 +108,10 @@
         <aside class="deck-list-panel">
             <div class="panel-header-new">
                 <span class="panel-title">デッキリスト</span>
+            </div>
+            <div class="deck-actions-new">
+                <input type="text" class="deck-name-input-new" placeholder="デッキ名を入力">
+                <button type="button" class="save-deck-button-new">保存</button>
             </div>
             <div class="deck-list-hint">
                 <p>デッキリストのカードを押すとリストから外すことができます。</p>
@@ -111,9 +133,15 @@
                 <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
                 <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
             </div>
-            <div class="deck-actions-new">
-                <input type="text" class="deck-name-input-new" placeholder="デッキ名を入力">
-                <button type="button" class="save-deck-button-new">保存</button>
+        </aside>
+
+        <!-- 最右側: コメント入力 -->
+        <aside class="comment-input-panel">
+            <div class="panel-header-new">
+                <span class="panel-title">コメント</span>
+            </div>
+            <div class="comment-input-content">
+                <textarea class="comment-textarea" placeholder="デッキの説明やコンセプトを入力してください..."></textarea>
             </div>
         </aside>
     </main>

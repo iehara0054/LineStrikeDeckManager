@@ -17,6 +17,13 @@
             <a href="mypage.php" class="nav-button">マイデッキ保管庫</a>
         </nav>
     </header>
+
+    <nav class="breadcrumb">
+        <a href="../index.php">トップページ</a>
+        <span class="breadcrumb-separator">></span>
+        <span class="breadcrumb-current">ユーザー登録</span>
+    </nav>
+
     <div class="login-container">
         <h1 class="login-title">ユーザー登録</h1>
 

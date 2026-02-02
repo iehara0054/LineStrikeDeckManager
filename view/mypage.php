@@ -17,6 +17,12 @@
         </nav>
     </header>
 
+    <nav class="breadcrumb">
+        <a href="../index.php">トップページ</a>
+        <span class="breadcrumb-separator">></span>
+        <span class="breadcrumb-current">マイデッキ保管庫</span>
+    </nav>
+
     <main class="mypage-main">
         <div class="mypage-deck-grid">
             <!-- デッキカード1 -->

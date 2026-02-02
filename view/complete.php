@@ -18,6 +18,15 @@
             <a href="mypage.php" class="nav-button">マイデッキ保管庫</a>
         </nav>
     </header>
+
+    <nav class="breadcrumb">
+        <a href="../index.php">トップページ</a>
+        <span class="breadcrumb-separator">></span>
+        <a href="signup.php">ユーザー登録</a>
+        <span class="breadcrumb-separator">></span>
+        <span class="breadcrumb-current">登録完了</span>
+    </nav>
+
     <div class="complete-container">
         <p class="complete-message">ユーザー登録が完了しました</p>
         <a href="../index.php" class="complete-button">トップページへ</a>
