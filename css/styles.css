@@ -398,6 +398,7 @@ main {
     font-size: 60px;
     color: #b8860b;
     background-color: #faf6f0;
+    aspect-ratio: 5 / 4;
 }
 
 /* サイト説明文 */
@@ -665,9 +666,8 @@ main {
 .deck-card-thumbnail .thumbnail-grid img {
     display: block;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: top;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
 }
 
 /* パンくずリスト */
@@ -1388,9 +1388,8 @@ footer {
 .mypage-deck-thumbnail .thumbnail-grid img {
     display: block;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: top;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
 }
 
 .mypage-deck-actions {
@@ -1443,7 +1442,7 @@ footer {
     font-size: 80px;
     color: #b8860b;
     background-color: #faf6f0;
-    min-height: 100px;
+    aspect-ratio: 5 / 4;
 }
 
 /* マイページレスポンシブ */
