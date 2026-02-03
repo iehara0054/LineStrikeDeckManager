@@ -7,7 +7,7 @@
     <!-- TODO: ファビコンを追加する -->
     <link rel="stylesheet" href="css/styles.css?v=33">
 </head>
-<body class="fixed-layout page-index">
+<body class="page-index">
     <header>
         <a href="index.php" class="site-title">ラインストライク デッキビルダー</a>
         <nav class="header-nav">
