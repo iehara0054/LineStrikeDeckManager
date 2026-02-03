@@ -6,7 +6,7 @@
     <title>すべてのデッキ - ラインストライク デッキビルダー</title>
     <link rel="stylesheet" href="../css/styles.css?v=14">
 </head>
-<body class="fixed-layout page-decklist">
+<body class="page-decklist">
     <header>
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">すべてのデッキ</h1>
