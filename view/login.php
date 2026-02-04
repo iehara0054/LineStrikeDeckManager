@@ -32,12 +32,12 @@
         <form class="login-form" action="mypage.php" method="post">
             <div class="form-group">
                 <label for="login-id">ログインID</label>
-                <input type="text" id="login-id" name="login_id" value="iehara0054+ls@gmail.com" required>
+                <input type="text" id="login-id" name="login_id" value="test@example.com" required>
             </div>
 
             <div class="form-group">
                 <label for="password">パスワード</label>
-                <input type="password" id="password" name="password" value="password" required>
+                <input type="password" id="password" name="password" value="Test1234" required>
             </div>
 
             <div class="form-actions">
