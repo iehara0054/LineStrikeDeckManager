@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <!-- TODO: ファビコンを追加する -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body class="page-login">
     <header>
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
@@ -30,12 +32,12 @@
         <form class="login-form" action="mypage.php" method="post">
             <div class="form-group">
                 <label for="login-id">ログインID</label>
-                <input type="text" id="login-id" name="login_id" required>
+                <input type="text" id="login-id" name="login_id" value="iehara0054+ls@gmail.com" required>
             </div>
 
             <div class="form-group">
                 <label for="password">パスワード</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" value="password" required>
             </div>
 
             <div class="form-actions">
@@ -51,4 +53,5 @@
         <p class="footer-copyright">&copy; 2025 ラインストライク デッキビルダー</p>
     </footer>
 </body>
+
 </html>
