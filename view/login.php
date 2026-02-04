@@ -37,7 +37,7 @@
 
             <div class="form-group">
                 <label for="password">パスワード</label>
-                <input type="password" id="password" name="password" value="Test1234" required>
+                <input type="password" id="password" name="password" value="gS3FWVK4" required>
             </div>
 
             <div class="form-actions">
