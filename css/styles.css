@@ -31,9 +31,6 @@ body.fixed-layout {
 .page-index {
     background: linear-gradient(180deg, #e8f4fc 0%, #f4f8fb 100%);
 }
-.page-index header {
-    background: linear-gradient(90deg, #0d2137 0%, #1a4a6e 100%);
-}
 .page-index .section-title {
     color: #0d2137;
     border-left: 4px solid #1a4a6e;
@@ -50,17 +47,8 @@ body.fixed-layout {
     overflow: auto !important;
     height: auto !important;
 }
-.page-construction header {
-    background: linear-gradient(90deg, #1a3d2e 0%, #2d6a4f 100%);
-}
 .page-construction .panel-header {
     background: linear-gradient(90deg, #1a3d2e 0%, #2d6a4f 100%);
-}
-.page-construction .nav-button {
-    background-color: #2d6a4f;
-}
-.page-construction .nav-button:hover {
-    background-color: #40916c;
 }
 .page-construction .save-deck-button {
     background-color: #2d6a4f;
@@ -75,15 +63,6 @@ body.fixed-layout {
         radial-gradient(circle, rgba(90, 61, 122, 0.08) 1px, transparent 1px),
         linear-gradient(180deg, #f0e8f6 0%, #f8f4fb 100%);
     background-size: 15px 15px, 100% 100%;
-}
-.page-deck header {
-    background: linear-gradient(90deg, #2d1b4e 0%, #5a3d7a 100%);
-}
-.page-deck .nav-button {
-    background-color: #5a3d7a;
-}
-.page-deck .nav-button:hover {
-    background-color: #7b52a8;
 }
 .page-deck .deck-tab {
     background-color: #2d1b4e;
@@ -107,15 +86,6 @@ body.fixed-layout {
             rgba(184, 134, 11, 0.03) 20px
         ),
         linear-gradient(180deg, #faf6f0 0%, #fdfcfa 100%);
-}
-.page-mypage header {
-    background: linear-gradient(90deg, #78590a 0%, #a67c00 100%);
-}
-.page-mypage .nav-button {
-    background-color: #b8860b;
-}
-.page-mypage .nav-button:hover {
-    background-color: #d4a017;
 }
 .page-mypage .mypage-deck-header {
     background: linear-gradient(90deg, #78590a 0%, #a67c00 100%);
@@ -162,15 +132,6 @@ body.fixed-layout {
 .page-login {
     background: linear-gradient(180deg, #e0f2f1 0%, #f4fafa 100%);
 }
-.page-login header {
-    background: linear-gradient(90deg, #004d40 0%, #00796b 100%);
-}
-.page-login .nav-button {
-    background-color: #00796b;
-}
-.page-login .nav-button:hover {
-    background-color: #009688;
-}
 .page-login .login-button {
     background-color: #00796b;
 }
@@ -181,15 +142,6 @@ body.fixed-layout {
 /* サインアップページ - ピンク系 */
 .page-signup {
     background: linear-gradient(180deg, #fce4ec 0%, #fff8fa 100%);
-}
-.page-signup header {
-    background: linear-gradient(90deg, #4a1942 0%, #880e4f 100%);
-}
-.page-signup .nav-button {
-    background-color: #c2185b;
-}
-.page-signup .nav-button:hover {
-    background-color: #e91e63;
 }
 .page-signup .login-button {
     background-color: #c2185b;
@@ -210,15 +162,6 @@ body.fixed-layout {
         ),
         linear-gradient(180deg, #ffebee 0%, #fff5f5 100%);
 }
-.page-admin header {
-    background: linear-gradient(90deg, #4a0d0d 0%, #b71c1c 100%);
-}
-.page-admin .nav-button {
-    background-color: #c62828;
-}
-.page-admin .nav-button:hover {
-    background-color: #e53935;
-}
 .page-admin .admin-tab {
     background-color: #4a0d0d;
 }
@@ -235,7 +178,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #0d2137;
+    background: linear-gradient(90deg, #0d2137 0%, #1a4a6e 100%);
     border-bottom: none;
     position: sticky;
     top: 0;
