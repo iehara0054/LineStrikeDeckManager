@@ -26,7 +26,7 @@
     <main class="mypage-main">
         <div class="mypage-deck-grid">
             <!-- 新規登録カード -->
-            <a href="construction.php" class="mypage-deck-card new-deck-card">
+            <a href="../deck/construction.php" class="mypage-deck-card new-deck-card">
                 <div class="mypage-deck-header">新規登録</div>
                 <div class="new-deck-plus">＋</div>
             </a>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="mypage-deck-actions">
-                    <a href="construction.php?id=2" class="mypage-deck-button">編集</a>
+                    <a href="../deck/construction.php?id=2" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(2)">削除</button>
                     <button type="button" class="mypage-deck-button" onclick="copyDeck(2)">コピー</button>
                 </div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="mypage-deck-actions">
-                    <a href="construction.php?id=3" class="mypage-deck-button">編集</a>
+                    <a href="../deck/construction.php?id=3" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(3)">削除</button>
                     <button type="button" class="mypage-deck-button" onclick="copyDeck(3)">コピー</button>
                 </div>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
                 <div class="mypage-deck-actions">
-                    <a href="construction.php?id=4" class="mypage-deck-button">編集</a>
+                    <a href="../deck/construction.php?id=4" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(4)">削除</button>
                     <button type="button" class="mypage-deck-button" onclick="copyDeck(4)">コピー</button>
                 </div>
@@ -137,7 +137,7 @@
                     </div>
                 </div>
                 <div class="mypage-deck-actions">
-                    <a href="construction.php?id=5" class="mypage-deck-button">編集</a>
+                    <a href="../deck/construction.php?id=5" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(5)">削除</button>
                     <button type="button" class="mypage-deck-button" onclick="copyDeck(5)">コピー</button>
                 </div>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
                 <div class="mypage-deck-actions">
-                    <a href="construction.php?id=6" class="mypage-deck-button">編集</a>
+                    <a href="../deck/construction.php?id=6" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(6)">削除</button>
                     <button type="button" class="mypage-deck-button" onclick="copyDeck(6)">コピー</button>
                 </div>
@@ -193,7 +193,7 @@
                     </div>
                 </div>
                 <div class="mypage-deck-actions">
-                    <a href="construction.php?id=7" class="mypage-deck-button">編集</a>
+                    <a href="../deck/construction.php?id=7" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(7)">削除</button>
                     <button type="button" class="mypage-deck-button" onclick="copyDeck(7)">コピー</button>
                 </div>
@@ -221,7 +221,7 @@
                     </div>
                 </div>
                 <div class="mypage-deck-actions">
-                    <a href="construction.php?id=8" class="mypage-deck-button">編集</a>
+                    <a href="../deck/construction.php?id=8" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(8)">削除</button>
                     <button type="button" class="mypage-deck-button" onclick="copyDeck(8)">コピー</button>
                 </div>
@@ -249,7 +249,7 @@
                     </div>
                 </div>
                 <div class="mypage-deck-actions">
-                    <a href="construction.php?id=9" class="mypage-deck-button">編集</a>
+                    <a href="../deck/construction.php?id=9" class="mypage-deck-button">編集</a>
                     <button type="button" class="mypage-deck-button" onclick="confirmDelete(9)">削除</button>
                     <button type="button" class="mypage-deck-button" onclick="copyDeck(9)">コピー</button>
                 </div>

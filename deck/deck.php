@@ -14,14 +14,14 @@
         <nav class="header-nav">
             <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
             <a href="../index.php" class="nav-button">トップページ</a>
-            <a href="mypage.php" class="nav-button">マイデッキ保管庫</a>
+            <a href="../my_page/my_page.php" class="nav-button">マイデッキ保管庫</a>
         </nav>
     </header>
 
     <nav class="breadcrumb">
         <a href="../index.php">トップページ</a>
         <span class="breadcrumb-separator">></span>
-        <a href="decklist.php">すべてのデッキ</a>
+        <a href="deck_list.php">すべてのデッキ</a>
         <span class="breadcrumb-separator">></span>
         <span class="breadcrumb-current">デッキ詳細</span>
     </nav>

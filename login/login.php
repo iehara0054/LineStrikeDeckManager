@@ -29,7 +29,7 @@
         <h1 class="login-title">ログイン</h1>
 
         <!-- TODO: action属性にPHP処理ファイルを指定する（現在は仮でindex.phpへ遷移） -->
-        <form class="login-form" action="mypage.php" method="post">
+        <form class="login-form" action="../my_page/my_page.php" method="post">
             <div class="form-group">
                 <label for="login-id">ログインID</label>
                 <input type="text" id="login-id" name="login_id" value="test@example.com" required>

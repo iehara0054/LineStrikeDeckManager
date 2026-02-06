@@ -14,8 +14,8 @@
         <nav class="header-nav">
             <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
             <a href="../index.php" class="nav-button">トップページ</a>
-            <a href="construction.php" class="nav-button">新規デッキ登録</a>
-            <a href="mypage.php" class="nav-button">マイデッキ保管庫</a>
+            <a href="../deck/construction.php" class="nav-button">新規デッキ登録</a>
+            <a href="../my_page/my_page.php" class="nav-button">マイデッキ保管庫</a>
         </nav>
     </header>
 
