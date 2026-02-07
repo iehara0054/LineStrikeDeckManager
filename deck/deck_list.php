@@ -470,9 +470,6 @@
     </main>
 
     <footer>
-        <p class="footer-description">
-            このサイトはPSO2内カードゲーム・ラインストライクのデッキ構築/他者のデッキ閲覧を補助するサイトです。デッキの閲覧、登録、編集が可能です。
-        </p>
         <p class="footer-copyright">&copy; 2025 ラインストライク デッキビルダー</p>
     </footer>
 </body>

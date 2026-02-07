@@ -650,25 +650,13 @@ footer {
     padding: 15px 30px;
     border-top: none;
     margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer-description {
-    font-size: 12px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.75);
-    margin: 0;
+    text-align: center;
 }
 
 .footer-copyright {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
     margin: 0;
-    margin-left: auto;
-    white-space: nowrap;
 }
 
 /* ログイン画面 */
