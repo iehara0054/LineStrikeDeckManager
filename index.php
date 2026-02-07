@@ -36,7 +36,7 @@
                 <div class="news-hint">
                     <p class="news-hint-title">【使い方】</p>
                     <p>デッキカードをクリックすると、デッキの構成を閲覧 / 編集できます。</p>
-                    <p>デッキの新規登録は、マイデッキ保管庫からも可能です。</p>
+                    <p>デッキの新規登録は、マイデッキ保管庫から可能です。</p>
                 </div>
                 <div class="news-schedule">
                     <p class="news-schedule-title">【今後の予定】</p>
@@ -179,11 +179,6 @@
                         <img src="img/card_red/幻視の巫女カレン.jpg" alt="カード15">
                     </div>
                 </div>
-            </a>
-            <!-- 新規登録カード -->
-            <a href="deck/construction.php" class="deck-card index-new-deck-card">
-                <div class="deck-card-header">新規登録</div>
-                <div class="index-new-deck-plus">＋</div>
             </a>
             </div>
         </div>
