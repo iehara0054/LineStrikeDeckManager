@@ -270,9 +270,9 @@
         }
 
         function copyDeck(deckId) {
+            if (!confirm('コピーしますがよろしいですか？')) return;
             // TODO: コピー処理を実装
             console.log('Copy deck:', deckId);
-            alert('デッキをコピーしました');
         }
     </script>
 </body>
