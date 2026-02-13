@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <!-- TODO: ファビコンを追加する -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body class="page-signup">
     <header>
         <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
@@ -28,12 +30,11 @@
         <h1 class="login-title">ユーザー登録</h1>
 
         <!-- TODO: action属性にPHP処理ファイルを指定する -->
-        <form class="login-form" action="" method="post">
+        <form class="login-form" action="signup_api.php" method="post">
             <div class="form-group">
-                <label for="login_id">ログインID</label>
+                <label for="mail">メールアドレス</label>
                 <div class="input-wrapper">
-                    <input type="text" id="login_id" name="login_id" maxlength="14" required>
-                    <p class="form-hint">ご希望のログインIDを14文字以内で入力してください</p>
+                    <input type="text" id="mail" name="mail" required>
                     <div class="error-messages">
                         <span class="error-message">これはエラーメッセージです</span>
                     </div>
@@ -66,8 +67,7 @@
             <div class="form-group signup-button-row">
                 <label></label>
                 <div class="signup-button-area">
-                    <!-- TODO: <button type="submit" class="login-button">送信</button> に変更する -->
-                    <a href="complete.php" class="login-button">送信</a>
+                    <button type="submit" class="login-button">送信</button>
                 </div>
             </div>
         </form>
@@ -77,4 +77,5 @@
         <p class="footer-copyright">&copy; 2025 ラインストライク デッキビルダー</p>
     </footer>
 </body>
+
 </html>
