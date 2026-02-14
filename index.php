@@ -3,20 +3,9 @@ require_once __DIR__ . '/class/Helper.php';
 
 $Helper = new Helper();
 
-// ========================================
-// セッション管理とCSRF対策
-// ========================================
+
 session_start();
 
-if (empty($_SESSION['csrf_token']))
-{
-    $csrf_token = bin2hex(random_bytes(32));
-    $_SESSION['csrf_token'] = $csrf_token;
-}
-
-// ========================================
-// 定数定義とヘルパー関数
-// ========================================
 //エスケープ関数
 function h($str)
 {
