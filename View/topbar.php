@@ -4,8 +4,10 @@
 // ========================================
 
 require_once __DIR__ . '/../class/Helper.php';
+require_once __DIR__ . '/../class/CSRFProtection.php';
 
 $Helper = new Helper();
+$CSRF = new CSRFProtection();
 
 session_start();
 
