@@ -1,16 +1,5 @@
 <?php
-require_once __DIR__ . '/class/Helper.php';
-
-$Helper = new Helper();
-
-
-session_start();
-
-//エスケープ関数
-function h($str)
-{
-    return htmlspecialchars($str, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-}
+require_once __DIR__ . '/View/topbar.php';
 ?>
 
 <!DOCTYPE html>
@@ -21,16 +10,17 @@ function h($str)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="css/styles.css?v=33">
+    <link rel="stylesheet" href="css/styles.css?v=34">
 </head>
 
 <body class="page-index">
+    <div class="topbar">
+    </div>
     <header>
         <a href="index.php" class="site-title">ラインストライク デッキビルダー</a>
         <nav class="header-nav">
             <a href="admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
             <a href="login/login.php" class="nav-button">マイデッキ保管庫</a>
-            <p class="nav-note">※作成途中のため、管理者ページへのリンクを常時表示しています。</p>
         </nav>
     </header>
 

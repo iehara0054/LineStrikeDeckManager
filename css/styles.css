@@ -172,6 +172,31 @@ body.fixed-layout {
     background-color: #b71c1c;
 }
 
+/* トップバー */
+.topbar {
+    background: linear-gradient(90deg, #0d2137 0%, #1a4a6e 100%);
+}
+
+.topbar-inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3px 30px;
+}
+
+.header-note {
+    background: linear-gradient(90deg, #0d2137 0%, #1a4a6e 100%);
+    padding: 0 30px 3px 30px;
+    text-align: right;
+}
+
+.header-note .nav-note {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    width: auto;
+}
+
 /* ヘッダー */
 header {
     display: flex;
