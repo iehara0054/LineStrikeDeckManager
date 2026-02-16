@@ -5,6 +5,7 @@
 // ========================================
 
 class CSRFProtection {
+
     // CRSFトークン生成
     public static function generateToken() {
         if (empty($_SESSION['csrf_token'])) {
