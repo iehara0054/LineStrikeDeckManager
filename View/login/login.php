@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ログイン - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
 <body class="page-login">
     <header>
-        <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
+        <a href="../../index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">ログインページ</h1>
         <nav class="header-nav">
             <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="../index.php" class="nav-button">トップページ</a>
+            <a href="../../index.php" class="nav-button">トップページ</a>
         </nav>
     </header>
 
     <nav class="breadcrumb">
-        <a href="../index.php">トップページ</a>
+        <a href="../../index.php">トップページ</a>
         <span class="breadcrumb-separator">></span>
         <span class="breadcrumb-current">ログイン</span>
     </nav>

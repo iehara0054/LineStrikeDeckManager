@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/View/topbar.php';
+require_once __DIR__ . '/View/partials/topbar.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,8 +19,8 @@ require_once __DIR__ . '/View/topbar.php';
     <header>
         <a href="index.php" class="site-title">ラインストライク デッキビルダー</a>
         <nav class="header-nav">
-            <a href="admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="login/login.php" class="nav-button">マイデッキ保管庫</a>
+            <a href="View/admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
+            <a href="View/login/login.php" class="nav-button">マイデッキ保管庫</a>
         </nav>
     </header>
 
@@ -66,14 +66,14 @@ require_once __DIR__ . '/View/topbar.php';
         </div>
         <div class="index-header">
             <div class="section-header-row">
-                <h2 class="section-title">人気デッキ <a href="deck/deck_list.php" style="margin-left: 20px; font-weight: normal;">すべてのデッキを見る</a></h2>
+                <h2 class="section-title">人気デッキ <a href="View/deck/deck_list.php" style="margin-left: 20px; font-weight: normal;">すべてのデッキを見る</a></h2>
             </div>
         </div>
         <!-- TODO: 各デッキカードのリンクにデッキIDをパラメータとして渡す（例: deck.php?id=デッキID） -->
         <div class="deck-grid-wrapper">
             <div class="deck-grid">
                 <!-- デッキカード1 -->
-                <a href="deck/deck.php" class="deck-card">
+                <a href="View/deck/deck.php" class="deck-card">
                     <div class="deck-card-header">デッキ名1</div>
                     <div class="deck-card-thumbnail">
                         <div class="thumbnail-grid">
@@ -96,7 +96,7 @@ require_once __DIR__ . '/View/topbar.php';
                     </div>
                 </a>
                 <!-- デッキカード2 -->
-                <a href="deck/deck.php" class="deck-card">
+                <a href="View/deck/deck.php" class="deck-card">
                     <div class="deck-card-header">デッキ名2</div>
                     <div class="deck-card-thumbnail">
                         <div class="thumbnail-grid">
@@ -119,7 +119,7 @@ require_once __DIR__ . '/View/topbar.php';
                     </div>
                 </a>
                 <!-- デッキカード3 -->
-                <a href="deck/deck.php" class="deck-card">
+                <a href="View/deck/deck.php" class="deck-card">
                     <div class="deck-card-header">デッキ名3</div>
                     <div class="deck-card-thumbnail">
                         <div class="thumbnail-grid">
@@ -142,7 +142,7 @@ require_once __DIR__ . '/View/topbar.php';
                     </div>
                 </a>
                 <!-- デッキカード4 -->
-                <a href="deck/deck.php" class="deck-card">
+                <a href="View/deck/deck.php" class="deck-card">
                     <div class="deck-card-header">デッキ名4</div>
                     <div class="deck-card-thumbnail">
                         <div class="thumbnail-grid">
@@ -165,7 +165,7 @@ require_once __DIR__ . '/View/topbar.php';
                     </div>
                 </a>
                 <!-- デッキカード5 -->
-                <a href="deck/deck.php" class="deck-card">
+                <a href="View/deck/deck.php" class="deck-card">
                     <div class="deck-card-header">デッキ名5</div>
                     <div class="deck-card-thumbnail">
                         <div class="thumbnail-grid">
