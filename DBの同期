@@ -20,3 +20,29 @@ git push  # → 自動でDBダンプ
 1.git pull を実行
 2.初回のみ bash scripts/setup_hooks.sh でフックをインストール
 これで両方向の自動同期が完成です。
+
+ターミナル
+PS C:\xampp\htdocs\iehara\LineStrikeDeckManager> git push                    
+[main 43057f2] auto: DB dump updated
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+DB dump exported and committed
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+DB dump exported and committed
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+DB dump exported and committed
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.36 KiB | 1.36 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/iehara0054/LineStrikeDeckManager.git
+   0e9e52b..06c1b2e  main -> main
