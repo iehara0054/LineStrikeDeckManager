@@ -1,0 +1,22 @@
+使い方
+このPC（1台目）：
+
+
+git push  # → 自動でDBダンプ → コミット → プッシュ
+2台目のPC（初回のみ）：
+
+
+git clone <リポジトリURL>
+cd LineStrikeDeckManager
+bash scripts/setup_hooks.sh  # フックをインストール
+以降は：
+
+
+git pull  # → 自動でDBインポート
+git push  # → 自動でDBダンプ
+
+次は2台目のPCで：
+
+1.git pull を実行
+2.初回のみ bash scripts/setup_hooks.sh でフックをインストール
+これで両方向の自動同期が完成です。

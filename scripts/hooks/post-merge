@@ -1,0 +1,9 @@
+#!/bin/bash
+DB_NAME="linestrike_deck_manager"
+MYSQL="/c/xampp/mysql/bin/mysql"
+DUMP="database/dump.sql"
+
+if [ -f "$DUMP" ]; then
+    $MYSQL -u root "$DB_NAME" < "$DUMP"
+    echo "DB imported successfully"
+fi

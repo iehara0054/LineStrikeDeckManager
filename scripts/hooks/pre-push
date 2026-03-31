@@ -1,0 +1,11 @@
+#!/bin/bash
+DB_NAME="linestrike_deck_manager"
+MYSQLDUMP="/c/xampp/mysql/bin/mysqldump"
+OUTPUT="database/dump.sql"
+
+mkdir -p database
+$MYSQLDUMP -u root "$DB_NAME" > "$OUTPUT"
+
+git add "$OUTPUT"
+git commit -m "auto: DB dump updated" --allow-empty
+echo "DB dump exported and committed"
