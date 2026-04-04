@@ -22,7 +22,7 @@
     <nav class="breadcrumb">
         <a href="../../index.php">トップページ</a>
         <span class="breadcrumb-separator">></span>
-        <a href="signup.php">ユーザー登録</a>
+        <a href="register.php">ユーザー登録</a>
         <span class="breadcrumb-separator">></span>
         <span class="breadcrumb-current">登録完了</span>
     </nav>

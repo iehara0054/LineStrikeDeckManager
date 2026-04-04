@@ -30,7 +30,7 @@
         <h1 class="login-title">ユーザー登録</h1>
 
         <!-- TODO: action属性にPHP処理ファイルを指定する -->
-        <form class="login-form" action="../../API/auth/signup_api.php" method="post">
+        <form class="login-form" action="../../API/auth/register_api.php" method="post">
             <div class="form-group">
                 <label for="mail">メールアドレス</label>
                 <div class="input-wrapper">
