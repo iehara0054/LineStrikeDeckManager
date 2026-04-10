@@ -1,41 +1,26 @@
+<?php require_once __DIR__ . '/../../config.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>すべてのデッキ - ラインストライク デッキビルダー</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../../css/styles.css?v=14">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/styles.css?v=14">
 </head>
 <body class="page-decklist">
     <header>
-        <a href="../../index.php" class="site-title">ラインストライク デッキビルダー</a>
+        <a href="<?= BASE_URL ?>index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">すべてのデッキ</h1>
         <nav class="header-nav">
-            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="../../index.php" class="nav-button">トップページ</a>
-=======
-    <link rel="stylesheet" href="../css/styles.css?v=14">
-</head>
-<body class="page-decklist">
-    <header>
-        <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
-        <h1 class="page-title">すべてのデッキ</h1>
-        <nav class="header-nav">
-            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="../index.php" class="nav-button">トップページ</a>
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
-            <a href="../login/login.php" class="nav-button">マイデッキ保管庫</a>
+            <a href="<?= BASE_URL ?>View/admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
+            <a href="<?= BASE_URL ?>index.php" class="nav-button">トップページ</a>
+            <a href="<?= BASE_URL ?>View/login/login.php" class="nav-button">マイデッキ保管庫</a>
             <p class="nav-note">※作成途中のため、管理者ページへのリンクを常時表示しています。</p>
         </nav>
     </header>
 
     <nav class="breadcrumb">
-<<<<<<< HEAD
-        <a href="../../index.php">トップページ</a>
-=======
-        <a href="../index.php">トップページ</a>
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+        <a href="<?= BASE_URL ?>index.php">トップページ</a>
         <span class="breadcrumb-separator">></span>
         <span class="breadcrumb-current">すべてのデッキ</span>
     </nav>
@@ -55,39 +40,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード6">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
-=======
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード6">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -97,39 +64,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
-=======
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -139,39 +88,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード6">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
-=======
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード6">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -181,39 +112,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
-=======
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -223,39 +136,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
-=======
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -265,39 +160,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
-=======
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -307,39 +184,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
-=======
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -349,39 +208,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
-=======
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -391,39 +232,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
-=======
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -433,39 +256,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
-=======
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -475,39 +280,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード6">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
-=======
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード6">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -517,39 +304,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
-=======
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -559,39 +328,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
-=======
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード8">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード9">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -601,39 +352,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
-=======
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード12">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -643,39 +376,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード6">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
-=======
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード5">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード6">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -685,39 +400,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
-=======
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード1">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード2">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード7">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード10">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード14">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -727,39 +424,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
-=======
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード2">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード3">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード4">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード6">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード10">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード13">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード14">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード15">
                     </div>
                 </div>
             </a>
@@ -769,39 +448,21 @@
                 <div class="deck-card-header">デッキ名</div>
                 <div class="deck-card-thumbnail">
                     <div class="thumbnail-grid">
-<<<<<<< HEAD
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
-=======
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード1">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード4">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード5">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード9">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード11">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード12">
-                        <img src="../img/card_green/英雄の妹ルミア.jpg" alt="カード13">
-                        <img src="../img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード15">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード1">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード2">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード3">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード4">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード5">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード6">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード7">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード8">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード9">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード10">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード11">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード12">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード13">
+                        <img src="<?= BASE_URL ?>img/card_blue/忘れられた種族サリサ.jpg" alt="カード14">
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード15">
                     </div>
                 </div>
             </a>

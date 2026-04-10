@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>管理者ページ - デッキ管理 - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/styles.css">
 </head>
 <body class="page-admin">
     <header>
-        <a href="../../index.php" class="site-title">ラインストライク デッキビルダー</a>
+        <a href="<?= BASE_URL ?>index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">管理者ページ</h1>
         <nav class="header-nav">
-            <a href="../../index.php" class="nav-button">トップページ</a>
+            <a href="<?= BASE_URL ?>index.php" class="nav-button">トップページ</a>
         </nav>
     </header>
 

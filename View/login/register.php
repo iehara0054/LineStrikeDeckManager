@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -6,22 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ユーザー登録 - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/styles.css">
 </head>
 
 <body class="page-signup">
     <header>
-        <a href="../../index.php" class="site-title">ラインストライク デッキビルダー</a>
+        <a href="<?= BASE_URL ?>index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">ユーザー登録</h1>
         <nav class="header-nav">
-            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="../../index.php" class="nav-button">トップページ</a>
-            <a href="../my_page/my_page.php" class="nav-button">マイデッキ保管庫</a>
+            <a href="<?= BASE_URL ?>View/admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
+            <a href="<?= BASE_URL ?>index.php" class="nav-button">トップページ</a>
+            <a href="<?= BASE_URL ?>View/my_page/my_page.php" class="nav-button">マイデッキ保管庫</a>
         </nav>
     </header>
 
     <nav class="breadcrumb">
-        <a href="../../index.php">トップページ</a>
+        <a href="<?= BASE_URL ?>index.php">トップページ</a>
         <span class="breadcrumb-separator">></span>
         <span class="breadcrumb-current">ユーザー登録</span>
     </nav>
@@ -30,7 +31,7 @@
         <h1 class="login-title">ユーザー登録</h1>
 
         <!-- TODO: action属性にPHP処理ファイルを指定する -->
-        <form class="login-form" action="../../API/auth/register_api.php" method="post">
+        <form class="login-form" action="<?= BASE_URL ?>API/auth/register_api.php" method="post">
             <div class="form-group">
                 <label for="mail">メールアドレス</label>
                 <div class="input-wrapper">

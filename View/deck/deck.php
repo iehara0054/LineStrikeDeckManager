@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デッキ詳細 - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../../css/styles.css?v=30">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/styles.css?v=30">
 </head>
 <body class="fixed-layout page-deck">
     <header>
-        <a href="../../index.php" class="site-title">ラインストライク デッキビルダー</a>
+        <a href="<?= BASE_URL ?>index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">デッキ閲覧</h1>
         <nav class="header-nav">
-            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="../../index.php" class="nav-button">トップページ</a>
-            <a href="../my_page/my_page.php" class="nav-button">マイデッキ保管庫</a>
+            <a href="<?= BASE_URL ?>View/admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
+            <a href="<?= BASE_URL ?>index.php" class="nav-button">トップページ</a>
+            <a href="<?= BASE_URL ?>View/my_page/my_page.php" class="nav-button">マイデッキ保管庫</a>
         </nav>
     </header>
 
     <nav class="breadcrumb">
-        <a href="../../index.php">トップページ</a>
+        <a href="<?= BASE_URL ?>index.php">トップページ</a>
         <span class="breadcrumb-separator">></span>
         <a href="deck_list.php">すべてのデッキ</a>
         <span class="breadcrumb-separator">></span>
@@ -40,35 +41,35 @@
                         <div class="formation-slot" data-slot="1-1">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="1-2">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="1-3">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="1-4">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="1-5">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
@@ -76,35 +77,35 @@
                         <div class="formation-slot" data-slot="2-1">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="2-2">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="2-3">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="2-4">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="2-5">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
@@ -112,35 +113,35 @@
                         <div class="formation-slot" data-slot="3-1">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="3-2">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="3-3">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="3-4">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
                         <div class="formation-slot" data-slot="3-5">
                             <div class="slot-card filled">
                                 <div class="slot-card-image">
-                                    <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード">
+                                    <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード">
                                 </div>
                             </div>
                         </div>
@@ -157,7 +158,7 @@
                 </div>
                 <div class="card-detail-content">
                     <div class="card-detail-image">
-                        <img src="../../img/card_green/英雄の妹ルミア.jpg" alt="カード拡大">
+                        <img src="<?= BASE_URL ?>img/card_green/英雄の妹ルミア.jpg" alt="カード拡大">
                     </div>
                     <div class="skill-detail-content">
                         <p class="skill-name">スキル名</p>

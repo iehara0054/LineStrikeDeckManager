@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -6,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ログイン - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/styles.css">
 </head>
 
 <body class="page-login">
     <header>
-        <a href="../../index.php" class="site-title">ラインストライク デッキビルダー</a>
+        <a href="<?= BASE_URL ?>index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">ログインページ</h1>
         <nav class="header-nav">
-            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="../../index.php" class="nav-button">トップページ</a>
+            <a href="<?= BASE_URL ?>View/admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
+            <a href="<?= BASE_URL ?>index.php" class="nav-button">トップページ</a>
         </nav>
     </header>
 
     <nav class="breadcrumb">
-        <a href="../../index.php">トップページ</a>
+        <a href="<?= BASE_URL ?>index.php">トップページ</a>
         <span class="breadcrumb-separator">></span>
         <span class="breadcrumb-current">ログイン</span>
     </nav>
@@ -29,7 +30,7 @@
         <h1 class="login-title">ログイン</h1>
 
         <!-- TODO: action属性にPHP処理ファイルを指定する（現在は仮でindex.phpへ遷移） -->
-        <form class="login-form" action="../my_page/my_page.php" method="post">
+        <form class="login-form" action="<?= BASE_URL ?>View/my_page/my_page.php" method="post">
             <div class="form-group">
                 <label for="login-id">ログインID</label>
                 <input type="text" id="login-id" name="login_id" value="test@example.com" required>

@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,39 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デッキ構築 - ラインストライク デッキビルダー</title>
     <!-- TODO: ファビコンを追加する -->
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../../css/styles.css?v=30">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/styles.css?v=30">
 </head>
 <body class="fixed-layout page-construction">
     <header>
-        <a href="../../index.php" class="site-title">ラインストライク デッキビルダー</a>
+        <a href="<?= BASE_URL ?>index.php" class="site-title">ラインストライク デッキビルダー</a>
         <h1 class="page-title">編集ページ</h1>
         <nav class="header-nav">
-            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="../../index.php" class="nav-button">トップページ</a>
-=======
-    <link rel="stylesheet" href="../css/styles.css?v=30">
-</head>
-<body class="fixed-layout page-construction">
-    <header>
-        <a href="../index.php" class="site-title">ラインストライク デッキビルダー</a>
-        <h1 class="page-title">編集ページ</h1>
-        <nav class="header-nav">
-            <a href="../admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
-            <a href="../index.php" class="nav-button">トップページ</a>
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
-            <a href="../my_page/my_page.php" class="nav-button">マイデッキ保管庫</a>
+            <a href="<?= BASE_URL ?>View/admin/admin_users.php" class="nav-button admin-btn">管理者ページへ</a>
+            <a href="<?= BASE_URL ?>index.php" class="nav-button">トップページ</a>
+            <a href="<?= BASE_URL ?>View/my_page/my_page.php" class="nav-button">マイデッキ保管庫</a>
         </nav>
     </header>
 
     <nav class="breadcrumb">
-<<<<<<< HEAD
-        <a href="../../index.php">トップページ</a>
-=======
-        <a href="../index.php">トップページ</a>
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+        <a href="<?= BASE_URL ?>index.php">トップページ</a>
         <span class="breadcrumb-separator">></span>
-        <a href="../my_page/my_page.php">マイデッキ保管庫</a>
+        <a href="<?= BASE_URL ?>View/my_page/my_page.php">マイデッキ保管庫</a>
         <span class="breadcrumb-separator">></span>
         <span class="breadcrumb-current">デッキ編集</span>
     </nav>
@@ -75,49 +60,26 @@
             </div>
             <div class="card-list-content">
                 <div class="card-grid-new">
-<<<<<<< HEAD
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード1"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード2"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード3"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード4"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード5"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード6"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード7"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード8"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード9"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード10"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード11"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード12"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード13"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード14"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード15"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード16"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード17"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード18"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード19"></div>
-                    <div class="game-card-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="カード20"></div>
-=======
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード1"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード2"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード3"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード4"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード5"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード6"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード7"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード8"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード9"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード10"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード11"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード12"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード13"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード14"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード15"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード16"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード17"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード18"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード19"></div>
-                    <div class="game-card-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="カード20"></div>
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード1"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード2"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード3"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード4"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード5"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード6"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード7"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード8"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード9"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード10"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード11"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード12"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード13"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード14"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード15"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード16"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード17"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード18"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード19"></div>
+                    <div class="game-card-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="カード20"></div>
                 </div>
             </div>
         </aside>
@@ -130,11 +92,7 @@
                 </div>
                 <div class="card-detail-content">
                     <div class="card-detail-image">
-<<<<<<< HEAD
-                        <img src="../../img/card_red/幻視の巫女カレン.jpg" alt="選択中のカード" id="detail-card-img">
-=======
-                        <img src="../img/card_red/幻視の巫女カレン.jpg" alt="選択中のカード" id="detail-card-img">
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                        <img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="選択中のカード" id="detail-card-img">
                     </div>
                     <div class="skill-detail-content">
                         <p class="skill-name" id="skill-name">スキル名</p>
@@ -157,39 +115,21 @@
                 <p>デッキリストのカードを押すとリストから外すことができます。</p>
             </div>
             <div class="deck-grid-5x5">
-<<<<<<< HEAD
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-=======
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
-                <div class="deck-slot-new"><img src="../img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
->>>>>>> 7627f84f58f2614e0ece6ec868056b1911f13e43
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
+                <div class="deck-slot-new"><img src="<?= BASE_URL ?>img/card_red/幻視の巫女カレン.jpg" alt="デッキカード"></div>
             </div>
         </aside>
 

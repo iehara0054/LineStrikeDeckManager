@@ -15,7 +15,9 @@
       "Bash(claude cron:*)",
       "Bash(claude trigger:*)",
       "Read(//c/Users/dreco/AppData/Roaming/Claude/**)",
-      "Bash(chmod +x c:/xampp/htdocs/iehara/LineStrikeDeckManager/.git/hooks/post-commit c:/xampp/htdocs/iehara/LineStrikeDeckManager/.git/hooks/pre-push)"
+      "Bash(chmod +x c:/xampp/htdocs/iehara/LineStrikeDeckManager/.git/hooks/post-commit c:/xampp/htdocs/iehara/LineStrikeDeckManager/.git/hooks/pre-push)",
+      "Bash(python3)",
+      "Bash(node -e:*)"
     ]
   }
 }
